@@ -17,8 +17,10 @@ class InventoryTable extends Migration {
             $table->integer("quantity");
             $table->text("comment")->nullable();
             $table->integer("user_id")->unsigned();
+            $table->integer("product_id")->unsigned();
             $table->timestamps();
             $table->foreign("user_id")->references("id")->on("users");
+            $table->foreign("product_id")->references("id")->on("products");
         });
 	}
 
@@ -29,7 +31,7 @@ class InventoryTable extends Migration {
 	 */
 	public function down()
 	{
-		//
+        Schema::drop("inventory_histories");
 	}
 
 }
