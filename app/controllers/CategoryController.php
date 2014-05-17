@@ -16,20 +16,17 @@ class CategoryController extends BaseController {
     }
 
 
-	public function index()
+	public function save()
 	{
-		//
+        $name = Input::get("name");
+        $category = new Category();
+        $category->name = $name;
+        $category->save();
+        return array('status' => 'success', 'message' => 'Category has been Successfully saved');
 	}
-
-
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
 	public function create()
 	{
-		//
+       return View::make("category.edit");
 	}
 
 

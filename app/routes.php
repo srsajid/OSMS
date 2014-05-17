@@ -21,10 +21,9 @@ Route::get("/admin", function(){
 });
 
 Route::get("/category", "CategoryController@loadTable");
-Route::get("/category/edit", "CategoryController@edit");
-Route::get("/category/save", function(){
-    return "saved";
-});
+Route::get("/category/create", "CategoryController@create");
+
+Route::post("/category/save", "CategoryController@save");
 
 Route::get("category", 'CategoryController@loadTable');
 

@@ -9,6 +9,6 @@ _c.beforeTabLoad = function(event, ui) {
 _c.afterTabLoad = function(event, ui) {
     var panel = ui.panel;
     panel.find(".create-category").on("click", function(){
-        util.editPopup("Test Form", "Form.html");
+        util.editPopup("Create Category", "category/create");
     });
 }
