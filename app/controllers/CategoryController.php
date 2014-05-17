@@ -10,6 +10,7 @@ class CategoryController extends BaseController {
     public function loadTable() {
         $max = Input::has("max") ? Input::get("max") : "10";
         $offset = Input::has("offset") ? Input::get("offset") : "0";
+
         $categories = Category::all();
         $total = Category::count();
         return View::make("category.tableView", array('categories' => $categories, 'total' => $total, 'max' => $max, 'offset' => $offset));
