@@ -23,17 +23,7 @@ Route::get("/admin", function(){
 Route::get("/category", "CategoryController@loadTable");
 Route::get("/category/create", "CategoryController@create");
 Route::post("/category/save", "CategoryController@save");
-Route::get("form", function() {
-   return View::make("form.form");
-});
 
-Route::get("init", function() {
-    $author = Author::find(6);
-
-    $book = Book::find(1);
-    $book->authors()->detach($author);
-
-    return $book->authors;
-
-
-});
+Route::get("/product/loadTable", "ProductController@loadTable");
+Route::get("/product/create", "ProductController@create");
+Route::post("/product/save", "ProductController@save");

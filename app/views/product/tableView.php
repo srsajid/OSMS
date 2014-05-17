@@ -1,7 +1,7 @@
 <div class="head">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand">Title</a>
+            <a class="navbar-brand">Products</a>
         </div>
         <div>
             <div class="navbar-form navbar-right" role="search">
@@ -9,7 +9,7 @@
                     <input type="text" class="form-control" placeholder="Search">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
-                <button type="button" class="btn btn-default btn-sm create-category" title="Create Category">
+                <button type="button" class="btn btn-default btn-sm create-product" title="Create Product">
                     <span class="glyphicon glyphicon-camera"></span>
                 </button>
             </div>
@@ -20,15 +20,19 @@
 <div class="body">
     <table class="table">
         <colgroup>
-            <col style="width: 30%">
-            <col style="width: 30%">
-            <col style="width: 30%">
             <col style="width: 10%">
+            <col style="width: 20%">
+            <col style="width: 15%">
+            <col style="width: 20%">
+            <col style="width: 20%">
+            <col style="width: 15%">
         </colgroup>
         <thead>
         <tr>
             <th>Id</th>
             <th>Name</th>
+            <th>Sale Price</th>
+            <th>Category</th>
             <th>Created</th>
             <th>Actions</th>
         </tr>
@@ -38,15 +42,17 @@
             <tr class="active">
                 <td><?php echo $product->id; ?></td>
                 <td><?php echo $product->name; ?></td>
-                <td><?php  ?></td>
+                <td><?php echo $product->sale_price; ?></td>
+                <td><?php echo $product->category->name; ?></td>
+                <td><?php echo $product->created_at; ?></td>
                 <td>
-                    <button type="button" class="btn btn-default btn-xs">
+                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" data-action="edit">
                         <span class="glyphicon glyphicon-camera"></span>
                     </button>
-                    <button type="button" class="btn btn-default btn-xs">
-                        <span class="glyphicon glyphicon-camera"></span>
+                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" data-action="edit">
+                        <span class="glyphicon glyphicon-camera action-menu"></span>
                     </button>
-                    <button type="button" class="btn btn-default btn-xs">
+                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" data-action="edit">
                         <span class="glyphicon glyphicon-camera"></span>
                     </button>
                 </td>

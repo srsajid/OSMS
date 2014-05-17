@@ -22,3 +22,7 @@ tableTabPrototype.afterTabLoad = function(ecvent, ui) {
         _self["afterTableLoad"](event, ui);
     }
 }
+
+tableTabPrototype.reload = function() {
+    App.tabs.reload(this.tabId);
+}

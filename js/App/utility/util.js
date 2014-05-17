@@ -48,22 +48,22 @@ var util = {
         }
         defaults = $.extend(defaults, config)
         var dom = $('<div class="edit-popup-container"></div>');
+        dom.dialog($.extend({
+            create: function() {
+            },
+            close: function() {
+                dom.dialog("destroy")
+            },
+            title: title
+        }, defaults));
         this.ajax({
             url: url,
             success: function(resp) {
                 dom.append($(resp))
-                dom.dialog($.extend({
-                    create: function() {
-                        if(typeof defaults.after_load == "function") {
-                            defaults.after_load.call(dom);
-                        }
-                        events();
-                    },
-                    close: function() {
-                        dom.dialog("destroy")
-                    },
-                    title: title
-                }, defaults));
+                if(typeof defaults.after_load == "function") {
+                    defaults.after_load.call(dom);
+                }
+                events();
             },
             error: function() {
                 //TODO:
@@ -78,7 +78,10 @@ var util = {
                     }
                     $.extend(ajaxSettings, {
                         success: function(resp) {
-                            console.log("form success")
+                            if(resp.status != "success") {
+                                this.error(null, null, resp);
+                                return;
+                            }
                             dom.dialog("close");
                             _self.notify(resp.message, "success");
                             if(typeof defaults.success == "function") {

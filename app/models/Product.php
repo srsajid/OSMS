@@ -10,4 +10,7 @@ class Product extends Eloquent {
     public function category(){
         return $this->belongsTo("Category");
     }
+    public function inventoryHistory() {
+        return $this->hasMany("InventoryHistory");
+    }
 } 
