@@ -10,7 +10,7 @@
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
                 <button type="button" class="btn btn-default btn-sm create-product" title="Create Product">
-                    <span class="glyphicon glyphicon-camera"></span>
+                    <span class="glyphicon glyphicon-plus-sign"></span>
                 </button>
             </div>
         </div>
@@ -46,13 +46,13 @@
                 <td><?php echo $product->category->name; ?></td>
                 <td><?php echo $product->created_at; ?></td>
                 <td>
-                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" data-action="edit">
-                        <span class="glyphicon glyphicon-camera"></span>
+                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="edit">
+                        <span class="glyphicon glyphicon-pencil"></span>
                     </button>
-                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" data-action="edit">
+                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="view">
                         <span class="glyphicon glyphicon-camera action-menu"></span>
                     </button>
-                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" data-action="edit">
+                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="view">
                         <span class="glyphicon glyphicon-camera"></span>
                     </button>
                 </td>

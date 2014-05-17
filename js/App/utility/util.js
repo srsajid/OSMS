@@ -44,7 +44,8 @@ var util = {
             hide: {
                 effect: "explode",
                 duration: 600
-            }
+            },
+            data: {}
         }
         defaults = $.extend(defaults, config)
         var dom = $('<div class="edit-popup-container"></div>');
@@ -58,6 +59,7 @@ var util = {
         }, defaults));
         this.ajax({
             url: url,
+            data: defaults.data,
             success: function(resp) {
                 dom.append($(resp))
                 if(typeof defaults.after_load == "function") {

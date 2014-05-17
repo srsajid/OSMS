@@ -1,19 +1,36 @@
 /**
  * Created by User on 4/25/14.
  */
-var _one = App.tabs.product = new TableTab("product", "Product", "product/loadTable");
+var _p = App.tabs.product = new TableTab("product", "Product", "product/loadTable");
 
-_one.beforeTableLoad = function(event, ui) {
+_p.beforeTableLoad = function(event, ui) {
     ui.ajaxSettings.data = "?sajid=sssssssss";
 }
-_one.afterTableLoad = function(event, ui) {
+
+_p.afterTableLoad = function(event, ui) {
     var _self = this;
     var panel = ui.panel;
     panel.find(".create-product").on("click", function() {
-        util.editPopup("Create Table", "product/create", {
-            success: function() {
-                _self.reload();
-            }
-        });
+        _self.editProduct();
     })
 }
+
+_p.onMenuOptionClick = function(action, data) {
+    var _self = this;
+    switch (action) {
+        case "edit":
+            _self.editProduct(data.id);
+            break;
+    }
+}
+
+_p.editProduct = function(id){
+    var _self = this;
+    util.editPopup("Create Table", "product/create", {
+        success: function() {
+            _self.reload();
+        },
+        data: {id: id}
+    });
+}
+

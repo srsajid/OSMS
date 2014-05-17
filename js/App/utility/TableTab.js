@@ -18,6 +18,13 @@ tableTabPrototype.beforeTabLoad = function(event, ui) {
 
 tableTabPrototype.afterTabLoad = function(ecvent, ui) {
     var _self = this;
+    var panel = ui.panel;
+    panel.find(".action-menu").on("click", function() {
+        var $this = $(this);
+        if(typeof _self['onMenuOptionClick'] == "function") {
+            _self['onMenuOptionClick']($this.attr("action"), $this.data());
+        }
+    });
     if(typeof _self["afterTableLoad"] == "function") {
         _self["afterTableLoad"](event, ui);
     }

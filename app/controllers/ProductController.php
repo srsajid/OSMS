@@ -48,7 +48,7 @@ class ProductController extends BaseController {
             return array('status' => 'error', 'message' => $validator->messages()->all());
         }
         $product = null;
-        if(Input::has('id')) {
+        if(Input::get('id')) {
             $id = (int)$inputs['id'];
             $product = Product::find($id);
         } else {
