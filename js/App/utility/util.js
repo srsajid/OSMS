@@ -32,6 +32,7 @@ var util = {
     },
 
     editPopup: function(title, url, config) {
+        var _self = this;
         var defaults = {
             modal: true,
             width: 600,
@@ -45,7 +46,7 @@ var util = {
                 duration: 600
             }
         }
-        $.extend(defaults, config)
+        defaults = $.extend(defaults, config)
         var dom = $('<div class="edit-popup-container"></div>');
         this.ajax({
             url: url,
@@ -73,21 +74,30 @@ var util = {
                 ajax: true,
                 preSubmit: function(ajaxSettings) {
                     if(typeof defaults.preSubmit == "function") {
-                        $.extend(ajaxSettings, {
-                            success: function() {
-                               dom.dialog("close");
-                               // TODO Reender success message
-                            },
-                            error: function(){
-                               // TODO error message
-                            }
-                        })
-                        config.preSubmit.call(dom, ajaxSettings)
+                        defaults.preSubmit.call(dom, ajaxSettings)
                     }
+                    $.extend(ajaxSettings, {
+                        success: function(resp) {
+                            console.log("form success")
+                            dom.dialog("close");
+                            _self.notify(resp.message, "success");
+                            if(typeof defaults.success == "function") {
+                                defaults['success'](resp);
+                            }
+                        },
+                        error: function(a, b, resp){
+                            console.log("form error")
+                            _self.notify(resp.message, "error");
+                            if(typeof defaults.error == "function") {
+                                defaults['error'](resp);
+                            }
+                        }
+                    })
                 }
             })
         }
-
-
+    },
+    notify: function(message, type) {
+        alert(message);
     }
 }

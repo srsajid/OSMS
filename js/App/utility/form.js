@@ -109,7 +109,7 @@
                 modified_settings.data = $.extend(this.elm.serializeObject(), modified_settings.data)
             }
             this.elm.ajaxSubmit($.extend(modified_settings, {
-                response: function () {
+                complete: function () {
                     if (_form.disable_on_submit) {
                         if (_form.text_change_on_submit) {
                             _form.submitButton.text(_form.submitButton.orgText);
