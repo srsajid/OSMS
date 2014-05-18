@@ -1,0 +1,17 @@
+#admin-panel-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.ribbon-menu-btn {
+    line-height: 2.5;
+    margin-right: 5px;
+}
+
+#tabs {
+    min-height: 600px;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 10px 0 0 0;
+}
