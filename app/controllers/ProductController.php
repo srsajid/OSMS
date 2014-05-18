@@ -14,9 +14,9 @@ class ProductController extends BaseController {
         $total = Product::count();
         return View::make("product.tableView", array(
            'products' => $products,
-            'total' => $total,
-            'max' => $max,
-            'offset' => $offset)
+           'total' => $total,
+           'max' => $max,
+           'offset' => $offset)
         );
     }
 
@@ -71,5 +71,22 @@ class ProductController extends BaseController {
         }
         $product = Product::find(intval($id));
         return View::make("product.inventoryUpdate", array('product' => $product));
+    }
+
+    public function updateInventory() {
+        $inputs = Input::all();
+        $rules = array(
+            'id' =>"require|integer",
+            'quantity' =>"require|integer"
+        );
+        $validator = Validator::make($inputs, $rules);
+        $id = intval($inputs['id']);
+        $comment = $inputs['comment'];
+        $quantity = intval($inputs['quantity']);
+        if(!$validator->fails() && ProductService::updateInventory($quantity, $comment, $id)){
+            return array('status' => 'success', 'message' => "Inventory has been updated successfully");
+        } else {
+            return array('status' => 'error', 'message' => "Inventory update operation has been failed");
+        }
     }
 }

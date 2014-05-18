@@ -21,8 +21,9 @@ _p.onMenuOptionClick = function(action, data) {
         case "edit":
             _self.editProduct(data.id);
             break;
-        case "update-inventory":
+        case "inventory-update":
             _self.loadInventoryForm(data.id);
+            break;
     }
 }
 
@@ -37,5 +38,8 @@ _p.editProduct = function(id){
 }
 
 _p.loadInventoryForm = function(id) {
-
+    var _self = this;
+    util.editPopup("Update Inventory", "product/inventory", {
+        data: {id: id}
+    });
 }
