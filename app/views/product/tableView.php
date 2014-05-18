@@ -46,14 +46,14 @@
                 <td><?php echo $product->category->name; ?></td>
                 <td><?php echo $product->created_at; ?></td>
                 <td>
-                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="edit">
+                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="edit" title="Edit Product">
                         <span class="glyphicon glyphicon-pencil"></span>
                     </button>
-                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="view">
+                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="view" title="View Product">
                         <span class="glyphicon glyphicon-camera action-menu"></span>
                     </button>
-                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="view">
-                        <span class="glyphicon glyphicon-camera"></span>
+                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="inventory-update" title="Update Inventory">
+                        <span class="glyphicon glyphicon-database-plus"></span>
                     </button>
                 </td>
             </tr>

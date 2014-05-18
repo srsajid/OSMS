@@ -21,6 +21,8 @@ _p.onMenuOptionClick = function(action, data) {
         case "edit":
             _self.editProduct(data.id);
             break;
+        case "update-inventory":
+            _self.loadInventoryForm(data.id);
     }
 }
 
@@ -34,3 +36,6 @@ _p.editProduct = function(id){
     });
 }
 
+_p.loadInventoryForm = function(id) {
+
+}

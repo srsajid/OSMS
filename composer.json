@@ -10,10 +10,10 @@
 		"classmap": [
 			"app/commands",
 			"app/controllers",
-			"app/controllers/admin",
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
+			"app/services",
 			"app/tests/TestCase.php"
 		]
 	},

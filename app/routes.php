@@ -27,3 +27,9 @@ Route::post("/category/save", "CategoryController@save");
 Route::get("/product/loadTable", "ProductController@loadTable");
 Route::get("/product/create", "ProductController@create");
 Route::post("/product/save", "ProductController@save");
+Route::post("/product/inventory", "ProductController@loadInventoryForm");
+
+Route::get("test", function() {
+
+    return ProductService::HelloWorld();
+});

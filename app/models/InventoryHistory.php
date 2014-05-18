@@ -7,6 +7,7 @@
  */
 
 class InventoryHistory {
+    protected $table = 'inventory_histories';
     public function product() {
         return $this->belongsTo('Product');
     }

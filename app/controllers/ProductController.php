@@ -63,4 +63,13 @@ class ProductController extends BaseController {
         $product->save();
         return array('status' => 'success', 'message' => 'Product has been saved successfully.');
     }
-} 
+
+    public function loadInventoryForm() {
+        $id = Input::get("id");
+        if(!$id) {
+            App::abort(404);
+        }
+        $product = Product::find(intval($id));
+        return View::make("product.inventoryUpdate", array('product' => $product));
+    }
+}
