@@ -76,13 +76,14 @@ class ProductController extends BaseController {
     public function updateInventory() {
         $inputs = Input::all();
         $rules = array(
-            'id' =>"require|integer",
-            'quantity' =>"require|integer"
+            'id' =>"required|integer",
+            'quantity' =>"required|integer"
         );
         $validator = Validator::make($inputs, $rules);
         $id = intval($inputs['id']);
         $comment = $inputs['comment'];
         $quantity = intval($inputs['quantity']);
+
         if(!$validator->fails() && ProductService::updateInventory($quantity, $comment, $id)){
             return array('status' => 'success', 'message' => "Inventory has been updated successfully");
         } else {

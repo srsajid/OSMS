@@ -6,12 +6,12 @@
  * Time: 2:39 AM
  */
 
-class InventoryHistory {
+class InventoryHistory extends Eloquent{
     protected $table = 'inventory_histories';
     public function product() {
-        return $this->belongsTo('Product');
+        return $this->belongsTo("Product");
     }
     public function user() {
-        return $this->belongsTo('User');
+        return $this->belongsTo("User");
     }
 } 

@@ -10,11 +10,11 @@ class ProductService {
     public static function updateInventory($quantity, $comment, $productId) {
         DB::transaction(function() use ($quantity, $comment, $productId){
             $product = Product::find($productId);
-            $product->avilable_stock = $product->avilable_stock + $quantity;
+            $product->available_stock = $product->available_stock + $quantity;
             $product->save();
             $user = User::first();
             $history = new InventoryHistory();
-            $history->quantiry = $quantity;
+            $history->quantity = $quantity;
             $history->comment = $comment;
             $history->product()->associate($product);
             $history->user()->associate($user);
