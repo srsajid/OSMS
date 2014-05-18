@@ -32,5 +32,5 @@ Route::post("/product/updateInventory", "ProductController@updateInventory");
 
 Route::get("test", function() {
 
-    return ProductService::HelloWorld();
+    return ProductService::getProducts();
 });

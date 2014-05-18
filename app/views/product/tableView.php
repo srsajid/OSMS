@@ -53,7 +53,7 @@
                         <span class="glyphicon glyphicon-camera action-menu"></span>
                     </button>
                     <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="inventory-update" title="Update Inventory">
-                        <span class="glyphicon glyphicon-database-plus"></span>
+                        <span class="glyphicon glyphicon-upload"></span>
                     </button>
                 </td>
             </tr>

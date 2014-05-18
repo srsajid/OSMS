@@ -8,9 +8,9 @@
 
 class ProductController extends BaseController {
     public function loadTable() {
-        $max = Input::has("max") ? Input::get("max") : "10";
-        $offset = Input::has("offset") ? Input::get("offset") : "0";
-        $products = Product::all();
+        $max = Input::get("max") ? intval(Input::get("max")): 10;
+        $offset = Input::get("offset") ? intval(Input::get("offset")) : 0;
+        $products = ProductService::getProducts();
         $total = Product::count();
         return View::make("product.tableView", array(
            'products' => $products,
