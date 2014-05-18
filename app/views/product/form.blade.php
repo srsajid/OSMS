@@ -1,4 +1,4 @@
-<form class="form-horizontal create-edit-form" role="form" action="product/save" method="post">
+<form class="form-horizontal create-edit-form" role="form" action="<?php echo OSMS::$baseUrl;?>product/save" method="post">
     <input name="id" type="hidden" value="<?php echo $product->id; ?>">
     <div class="form-group">
         <label class="col-sm-2 control-label">Name</label>

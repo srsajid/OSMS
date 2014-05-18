@@ -14,7 +14,7 @@
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/services",
-			"app/tests/TestCase.php"
+			"app/tests/TestCase.php",
 			"app/OSMS.php"
 		]
 	},
