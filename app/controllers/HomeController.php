@@ -2,9 +2,10 @@
 
 class HomeController extends BaseController {
     public function home(){
-
-        $user = User::find(1);
-        echo'<pre>',print_r($user),'</pre>';
+        \Illuminate\Support\Facades\Mail::Send('emails.auth.test',array('name' => 'Rashad'),function($message){
+                $message->to('kh.tafiqul.islam@gmail.com','Rashad')->subject('Test email sending');
+            }
+        );
         return View::make('home');
     }
 }
