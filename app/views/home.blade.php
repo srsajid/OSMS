@@ -1,5 +1,13 @@
 @extends('layout.main')
 
 @section('content')
-    Home
+    @if(Auth::check())
+        <p>
+            Hello .
+        </p>
+    @else
+        <p>
+            Sign in first.
+        </p>
+    @endif
 @stop
