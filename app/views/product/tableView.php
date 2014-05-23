@@ -6,9 +6,9 @@
         <div>
             <div class="navbar-form navbar-right" role="search">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
+                    <input type="text" name="searchText" class="form-control" placeholder="Search" value="<?php echo($searchText); ?>">
                 </div>
-                <button type="submit" class="btn btn-default">Search</button>
+                <button type="submit" class="btn btn-default search">Search</button>
                 <button type="button" class="btn btn-default btn-sm tool-icon create-product" title="Create Product">
                     <span class="glyphicon glyphicon-plus-sign"></span>
                 </button>
@@ -62,5 +62,8 @@
     </table>
 </div>
 <div class="footer">
-    <?php echo CommonService::paginator($max, $offset, $total); ?>
+    <?php
+        echo CommonService::paginator($max, $offset, $total);
+        echo CommonService::itemPerPage($max);
+    ?>
 </div>

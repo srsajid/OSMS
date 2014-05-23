@@ -10,14 +10,16 @@ class ProductController extends BaseController {
     public function loadTable() {
         $max = Input::get("max") ? intval(Input::get("max")): 10;
         $offset = Input::get("offset") ? intval(Input::get("offset")) : 0;
+        $searchText = Input::get("searchText") ? Input::get("searchText") : "";
         $products = ProductService::getProducts();
-        $total = Product::count();
+        $total = ProductService::getCounts();
         return View::make("product.tableView", array(
            'products' => $products,
            'total' => $total,
            'max' => $max,
-           'offset' => $offset)
-        );
+           'offset' => $offset,
+           'searchText' => $searchText
+        ));
     }
 
     public function create() {

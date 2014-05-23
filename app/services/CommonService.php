@@ -7,7 +7,7 @@
  */
 
 class CommonService {
-    public static function paginator($max, $offset, $total) {
+    public static function itemPerPage($max) {
         $html = "<select class='item-per-page'>".PHP_EOL;
         $array = array(
             '10' => '10',
@@ -20,8 +20,11 @@ class CommonService {
             $class = intval($value) == $max ? "selected" : "";
             $html = $html."<option value='$key' $class>$value</option>".PHP_EOL;
         }
-        $html= $html."</select>";
-        $html = $html."<ul class='pagination' max='$max' offset='$offset' total='$total'>".PHP_EOL;
+        $html = $html."</select>";
+        return $html;
+    }
+    public static function paginator($max, $offset, $total) {
+        $html = "<ul class='pagination' max='$max' offset='$offset' total='$total'>".PHP_EOL;
         $currentPage = intval($offset / $max) + 1;
         $noOfPage = ceil($total/$max);
         $class = $currentPage == 1 ? "disabled" : "";
@@ -30,7 +33,7 @@ class CommonService {
             $class = $i == $currentPage ? "active" : "";
             $html =  $html."<li page='$i' class='$class' ><a>$i</a></li>".PHP_EOL;
         }
-        $class = $currentPage == $noOfPage ?  "disabled" : "";
+        $class = $currentPage == $noOfPage || $total < $max ?  "disabled" : "";
         $html = $html."<li page='next' class='$class'><a>&raquo;</a></li>".PHP_EOL;
         $html = $html.'</ul>';
         return $html;

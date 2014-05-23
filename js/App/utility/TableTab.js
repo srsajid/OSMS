@@ -11,14 +11,42 @@ var tableTabPrototype = TableTab.prototype;
 
 tableTabPrototype.beforeTabLoad = function(event, ui) {
     var _self = this;
-    if(typeof _self["beforeTableLoad"] == "function") {
-        _self["beforeTableLoad"](event, ui);
+    var panel = ui.panel;
+    var params = {};
+    var pagination = panel.find(".pagination");
+    if(pagination) {
+        $.extend(params, {
+            max: panel.find(".item-per-page").val(),
+            offset: pagination.attr("offset")
+        })
     }
+    if(panel.find("input[name=searchText]").val()) {
+        $.extend(params, {
+            searchText: panel.find("input[name=searchText]").val()
+        });
+    }
+    if(typeof _self["beforeTableLoad"] == "function") {
+        _self["beforeTableLoad"](event, ui, params);
+    }
+    ui.ajaxSettings.url += "?" + $.param(params);
 }
 
 tableTabPrototype.afterTabLoad = function(ecvent, ui) {
     var _self = this;
     var panel = ui.panel;
+    var pagination = panel.find(".pagination");
+    pagination.paginator();
+    pagination.on("paginator-click", function() {
+        _self.reload();
+    })
+    panel.find(".item-per-page").on("change", function() {
+        pagination.attr("offset", "0");
+        _self.reload();
+    });
+    panel.find("button.search").on("click", function() {
+        pagination.attr("offset", "0");
+        _self.reload();
+    })
     panel.find(".action-menu").on("click", function() {
         var $this = $(this);
         if(typeof _self['onMenuOptionClick'] == "function") {
