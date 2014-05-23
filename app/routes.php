@@ -30,6 +30,28 @@ Route::post("/product/save", "ProductController@save");
 Route::get("/product/inventory", "ProductController@loadInventoryForm");
 Route::post("/product/updateInventory", "ProductController@updateInventory");
 
+/*
+ * Sign in with GET
+ * */
+
+Route::get('/sign-in',array(
+        'as' => 'sign-in',
+        'uses' => 'AccountController@getSignIn'
+    )
+
+);
+
+/*
+* Sign in with POST
+* */
+
+Route::post('/sign-in',array(
+        'as' => 'sign-in-post',
+        'uses' => 'AccountController@postSignIn'
+    )
+
+);
+
 Route::get("test", function() {
 
     return CommonService::paginator(20, 40, 100);
