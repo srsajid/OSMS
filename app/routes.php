@@ -32,5 +32,5 @@ Route::post("/product/updateInventory", "ProductController@updateInventory");
 
 Route::get("test", function() {
 
-    return ProductService::getProducts();
+    return CommonService::paginator(20, 40, 100);
 });

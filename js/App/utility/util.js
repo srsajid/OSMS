@@ -30,7 +30,29 @@ var util = {
         $.extend(defaults, settings);
         $.ajax(defaults);
     },
-
+    onReady: function(obj, prop, callback, maxAttempt) {
+        if(typeof maxAttempt == "undefined") {
+            maxAttempt = 10
+        }
+        if(maxAttempt > 0) {
+            if(typeof obj[prop] == "undefined") {
+                if($.isPlainObject(callback) && callback.not) {
+                    callback = $.extend({}, callback)
+                    callback.not.call(obj);
+                    callback.not = undefined
+                }
+                setTimeout(function() {
+                    utility.onReady(obj, prop, callback, --maxAttempt)
+                }, 2000)
+            } else {
+                ($.isPlainObject(callback) ? callback.ready : callback).call(obj[prop]);
+            }
+        } else {
+            if($.isPlainObject(callback) && callback.fail) {
+                callback.fail.call(obj);
+            }
+        }
+    },
     editPopup: function(title, url, config) {
         var _self = this;
         var defaults = {
@@ -49,6 +71,7 @@ var util = {
         }
         defaults = $.extend(defaults, config)
         var dom = $('<div class="edit-popup-container"></div>');
+        dom.loader();
         dom.dialog($.extend({
             create: function() {
             },
@@ -62,6 +85,7 @@ var util = {
             data: defaults.data,
             success: function(resp) {
                 dom.append($(resp))
+                dom.loader(false);
                 if(typeof defaults.after_load == "function") {
                     defaults.after_load.call(dom);
                 }

@@ -8,8 +8,8 @@
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Search">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-                <button type="button" class="btn btn-default btn-sm create-product" title="Create Product">
+                <button type="submit" class="btn btn-default">Search</button>
+                <button type="button" class="btn btn-default btn-sm tool-icon create-product" title="Create Product">
                     <span class="glyphicon glyphicon-plus-sign"></span>
                 </button>
             </div>
@@ -60,4 +60,7 @@
         <?php }); ?>
         </tbody>
     </table>
+</div>
+<div class="footer">
+    <?php echo CommonService::paginator($max, $offset, $total); ?>
 </div>

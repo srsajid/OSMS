@@ -11,6 +11,7 @@
     <script src="js/App/App.js"></script>
     <script src="js/App/utility/form.jquery.js"></script>
     <script src="js/App/utility/util.js"></script>
+    <script src="js/App/utility/prototype.js"></script>
     <script src="js/App/utility/form.js"></script>
     <script src="js/App/utility/srui-tabs.js"></script>
     <script src="js/App/utility/ui.js"></script>

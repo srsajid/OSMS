@@ -14,6 +14,7 @@ return array(
     'Category' => $baseDir . '/app/models/Category.php',
     'CategoryController' => $baseDir . '/app/controllers/CategoryController.php',
     'CategoryTable' => $baseDir . '/app/database/migrations/2014_05_14_170332_category_table.php',
+    'CommonService' => $baseDir . '/app/services/CommonService.php',
     'CreateUsers' => $baseDir . '/app/database/migrations/2014_04_18_170647_create_users.php',
     'DatabaseSeeder' => $baseDir . '/app/database/seeds/DatabaseSeeder.php',
     'HomeController' => $baseDir . '/app/controllers/HomeController.php',

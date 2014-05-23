@@ -6,7 +6,7 @@ App.tabs.addToTab = function(tabId) {
     if(!tabs.find("li[tab-id="+ tabId +"]").length) {
         var tab = App.tabs[tabId];
         var url = tab.url;
-        var panel = url ? url : "#sr-ui-" + tabId;
+        var panel = url ? url : "#sr-ui-tab-" + tabId;
         var headerTemplate = '<li tab-id="' + tabId + '"><a href="' + panel + '">' + tab.title +'</a> <span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>';
         tabs.find(".main-tab-header-container ul").append(headerTemplate);
         if(!url) {
@@ -32,18 +32,22 @@ App.tabs.reload = function(tabId) {
 App.global_event.on("tab-created", function() {
 
     App.tabs.tabs.on("tabsbeforeload", function(event, ui) {
+        var panel = ui.panel;
         var tabId = ui.tab.attr("tab-id");
         var tab = App.tabs[tabId];
         if(typeof tab["beforeTabLoad"] == "function") {
             tab["beforeTabLoad"](event, ui);
         }
+        panel.loader();
     });
 
     App.tabs.tabs.on("tabsload", function(event, ui) {
+        var panel = ui.panel;
         var tabId = ui.tab.attr("tab-id");
         var tab = App.tabs[tabId];
         if(typeof tab["afterTabLoad"] == "function") {
             tab["afterTabLoad"](event, ui);
         }
+        panel.load(false);
     });
 })
