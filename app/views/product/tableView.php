@@ -21,10 +21,11 @@
     <table class="table">
         <colgroup>
             <col style="width: 10%">
-            <col style="width: 20%">
+            <col style="width: 18%">
             <col style="width: 15%">
-            <col style="width: 20%">
-            <col style="width: 20%">
+            <col style="width: 6%">
+            <col style="width: 18%">
+            <col style="width: 18%">
             <col style="width: 15%">
         </colgroup>
         <thead>
@@ -32,6 +33,7 @@
             <th>Id</th>
             <th>Name</th>
             <th>Sale Price</th>
+            <th>Stock</th>
             <th>Category</th>
             <th>Created</th>
             <th>Actions</th>
@@ -43,6 +45,7 @@
                 <td><?php echo $product->id; ?></td>
                 <td><?php echo $product->name; ?></td>
                 <td><?php echo $product->sale_price; ?></td>
+                <td><?php echo $product->available_stock; ?></td>
                 <td><?php echo $product->category->name; ?></td>
                 <td><?php echo $product->created_at; ?></td>
                 <td>
