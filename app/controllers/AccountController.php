@@ -1,9 +1,18 @@
 <?php
 Class AccountController extends BaseController{
-    public function getSignIn(){
-        return View::make('account.signin');
+    public function login() {
+        $user = array(
+            'username' => Input::get('username'),
+            'password' => Input::get('password')
+        );
+        if (Auth::attempt($user)) {
+            return Redirect::route('admin')
+                ->with('flash_notice', 'You are successfully logged in.');
+        }
+        return Redirect::route('login')
+            ->with('flash_error', 'Your username/password combination was incorrect.')
+            ->withInput();
     }
-
     public function postSignIn(){
         $validator = Validator::make(Input::all(),
             array(
