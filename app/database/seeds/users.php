@@ -3,6 +3,6 @@
 return array(
     array(
         'username' => 'admin',
-        'password' => Hash::make('admin')
+        'password' => '$2y$10$tTD/a7A0sitV/y2DXK.w8eab.74pJ/YXuY/5mLbhfdk7yRYI3I1Ym'
     ),
 );

@@ -1526,6 +1526,7 @@ return array(
     'System_SSH_Agent_Identity' => $vendorDir . '/phpseclib/phpseclib/phpseclib/System/SSH_Agent.php',
     'TestCase' => $baseDir . '/app/tests/TestCase.php',
     'UpdateUsers' => $baseDir . '/app/database/migrations/2014_05_24_142344_update_users.php',
+    'UpdateUsersAddTokenEmailCol' => $baseDir . '/app/database/migrations/2014_05_24_150012_update_users_add_token_email_col.php',
     'User' => $baseDir . '/app/models/User.php',
     'Whoops\\Exception\\ErrorException' => $vendorDir . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
     'Whoops\\Exception\\Frame' => $vendorDir . '/filp/whoops/src/Whoops/Exception/Frame.php',

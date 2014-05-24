@@ -21,12 +21,12 @@
                 <h1 class="text-center">Login</h1>
             </div>
             <div class="modal-body">
-                <form class="form col-md-12 center-block">
+                <form class="form col-md-12 center-block" action="<?php OSMS::$baseUrl + "login" ?>" method="post">
                     <div class="form-group">
-                        <input type="text" class="form-control input-lg" placeholder="Email">
+                        <input name="username" type="text" class="form-control input-lg" placeholder="Username">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control input-lg" placeholder="Password">
+                        <input name="password" type="password" class="form-control input-lg" placeholder="Password">
                     </div>
                     <div class="form-group">
                         <button class="btn btn-primary btn-lg btn-block">Sign In</button>

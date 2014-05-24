@@ -11,13 +11,30 @@
 |
 */
 
-Route::get('/', function(){
-    return View::make("admin.login");
+Route::get('/',function(){
+    return Redirect::to("/login");
 });
 
-Route::get("/admin", function(){
-    return View::make("admin.cms");
+Route::get("login", array('as' => 'login', function(){
+    return View::make("admin.login");
+}))->before("guest");
+
+Route::post("login", function() {
+    $user = array(
+        'username' => Input::get('username'),
+        'password' => Input::get('password')
+    );
+    if (Auth::attempt($user)) {
+        return Redirect::route('admin')
+            ->with('flash_notice', 'You are successfully logged in.');
+    }
+    return Redirect::route('login')
+        ->with('flash_error', 'Your username/password combination was incorrect.')
+        ->withInput();
 });
+Route::get("/admin", array('as' => 'admin',function(){
+    return View::make("admin.cms");
+}))->before("auth");
 
 Route::get("/category", "CategoryController@loadTable");
 Route::get("/category/create", "CategoryController@create");
@@ -53,5 +70,5 @@ Route::post('/sign-in',array(
 
 Route::get("test", function() {
 
-    return CommonService::paginator(20, 40, 100);
+    return Hash::make('admin');
 });
