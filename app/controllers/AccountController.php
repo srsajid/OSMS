@@ -13,6 +13,11 @@ Class AccountController extends BaseController{
             ->with('flash_error', 'Your username/password combination was incorrect.')
             ->withInput();
     }
+
+    public function logout() {
+       Auth::logout();
+       return Redirect::to("login");
+    }
     public function postSignIn(){
         $validator = Validator::make(Input::all(),
             array(

@@ -20,6 +20,7 @@ Route::get("login", array('as' => 'login', function(){
 }))->before("guest");
 
 Route::post("login", "AccountController@login");
+Route::get("logout", "AccountController@logout");
 Route::get("/admin", array('as' => 'admin',function(){
     return View::make("admin.cms");
 }))->before("auth");
