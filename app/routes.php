@@ -11,10 +11,9 @@
 |
 */
 
-Route::get('/', array(
-    'as' => 'home',
-    'uses' => 'HomeController@home'
-));
+Route::get('/', function(){
+    return View::make("admin.login");
+});
 
 Route::get("/admin", function(){
     return View::make("admin.cms");

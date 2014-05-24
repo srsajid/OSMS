@@ -1,78 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Login page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/typica-login.css">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <!-- Le favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
-
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="index.html"><img src="logo.png" alt="Typica - Bootstrap Awesome Template!"></a>
+<!--login modal-->
+<div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="text-center">Login</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form col-md-12 center-block">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-lg" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-lg btn-block">Sign In</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-12">
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-<div class="container">
-
-    <div id="login-wraper">
-        <form class="form login-form">
-            <legend>Sign in to <span class="blue">MyApp</span></legend>
-
-            <div class="body">
-                <label>Username</label>
-                <input type="text">
-
-                <label>Password</label>
-                <input type="password">
-            </div>
-
-            <div class="footer">
-                <label class="checkbox inline">
-                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
-                </label>
-
-                <button type="submit" class="btn btn-success">Login</button>
-            </div>
-
-        </form>
-    </div>
-
-</div>
-
-<footer class="white navbar-fixed-bottom">
-    Don't have an account yet? <a href="register.html" class="btn btn-black">Register</a>
-</footer>
-
-
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/backstretch.min.js"></script>
-<script src="js/typica-login.js"></script>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
