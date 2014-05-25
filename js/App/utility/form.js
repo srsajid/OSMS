@@ -52,6 +52,9 @@
         },
         force_submit: function(settings) {
             var _form = this;
+            if(_form.elm.validationEngine("validate")) {
+                return;
+            }
             if (this.disable_on_submit) {
                 if(this.text_change_on_submit) {
                     var text = this.submitButton.orgText = this.submitButton.text();
@@ -140,6 +143,7 @@
             } catch (ex) {
                 return false;
             }
+
         }
     }
 
@@ -161,6 +165,7 @@
         $.each(careFunctions, function() {
             this.call(_self, instance);
         })
+        _self.validationEngine('attach');
     }
 
     $.fn.form = function(funcs) {
