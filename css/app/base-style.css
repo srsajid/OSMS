@@ -53,3 +53,32 @@
 .edit-popup-container {
     min-height: 100px;
 }
+
+/* Tow side selection*/
+.two-column .column{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.two-column .column .content{
+    width: 100%;
+    margin: 10px;
+}
+.glyphicon {
+    cursor: pointer;
+}
+
+.two-column table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.two-column td,.two-column th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.two-column td.action, .two-column th{
+    text-align: center;
+}

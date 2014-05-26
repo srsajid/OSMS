@@ -57,7 +57,4 @@ Route::post('/sign-in',array(
 
 );
 
-Route::get("test", function() {
-
-    return Hash::make('admin');
-});
+Route::get("test", "ProductController@productForSelection");

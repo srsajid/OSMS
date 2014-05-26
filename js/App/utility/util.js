@@ -22,6 +22,68 @@ window.dir = function() {
 }
 
 var util = {
+    twoSideSelection: function(container, leftTableUrl, fieldName){
+        var leftTable, rightTable, leftTablePaginator;
+        var globalFunc = {
+            afterSelect: function(){}
+
+        }
+        function init() {
+            leftTable = container.find(".first-column.column table");
+            rightTable = container.find(".last-column.column table");
+            leftTablePaginator = container.find(".first-column .pagination");
+            leftTablePaginator.paginator();
+
+        }
+        function initLeftTable() {
+
+        }
+        function selectItem(item) {
+            var name = item.parents("tr:eq(0)").find("td.name").text();
+            var value = item.attr("value");
+            var template = '<tr><td class="name">'+ name + '</td>' +
+                '<td class="action"><span class="glyphicon glyphicon-remove"></span>' +
+                '<input type="hidden" name="'+ fieldName +'" value="'+ value + '"></td></tr>';
+            template = $(template)
+            rightTable.append(template);
+            globalFunc.afterSelect(template);
+            rightTableRowEvents(template);
+        }
+        function deselectItem(item) {
+            var checkBox = leftTable.find("input[value="+ item +"].selector");
+            if(checkBox[0].checked) {
+                checkBox[0].checked = false;
+            }
+            var selectedRow = rightTable.find("input[name="+ fieldName +"][value="+ item +"]").parents("tr:eq(0)");
+            selectedRow.remove();
+        }
+        function bindLeftTableEvents() {
+            leftTable.find("input[type=checkbox].selector").on('change', function() {
+                var checked = this.checked;
+                var $this = $(this);
+                if(checked) {
+                    selectItem($this)
+                } else {
+                    deselectItem($this.attr("value"));
+                }
+            })
+        }
+        function rightTableRowEvents(row) {
+            row.find(".glyphicon-remove").on("click", function() {
+                deselectItem(row.find("input[name="+fieldName+"]").val());
+            })
+        }
+        function bindRightTableEvents() {
+            rightTable.find("tr:gt(0)").each(function() {
+                rightTableRowEvents($(this))
+            })
+        }
+        container.loader();
+        init();
+        initLeftTable();
+        bindLeftTableEvents();
+        container.loader(false)
+    },
     ajax: function(settings) {
         var defaults  = {
             dataType: 'html',

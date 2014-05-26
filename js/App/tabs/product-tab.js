@@ -13,6 +13,15 @@ _p.afterTableLoad = function(event, ui) {
     panel.find(".create-product").on("click", function() {
         _self.editProduct();
     })
+    panel.find(".create-pack-product").on("click", function() {
+        util.editPopup("Create Table", "test", {
+            width: 800,
+
+            after_load: function() {
+                util.twoSideSelection(this, "", "included");
+            }
+        });
+    })
 }
 
 _p.onMenuOptionClick = function(action, data) {
@@ -40,6 +49,9 @@ _p.editProduct = function(id){
 _p.loadInventoryForm = function(id) {
     var _self = this;
     util.editPopup("Update Inventory", "product/inventory", {
-        data: {id: id}
+        data: {id: id},
+        success: function() {
+            _self.reload();
+        }
     });
 }

@@ -12,6 +12,9 @@
                 <button type="button" class="btn btn-default btn-sm tool-icon create-product" title="Create Product">
                     <span class="glyphicon glyphicon-plus-sign"></span>
                 </button>
+                <button type="button" class="btn btn-default btn-sm tool-icon create-pack-product" title="Create Product">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                </button>
             </div>
         </div>
     </nav>
