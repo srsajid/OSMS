@@ -56,15 +56,26 @@ var util = {
             })
         }
         function initLeftTable() {
-
             leftTable = container.find(".first-column.column table");
             leftTablePaginator = container.find(".pagination");
             leftTablePaginator.paginator();
+            var noOfRow = leftPanel.find("tr").length;
+            for(var i = 0; i < 11 - noOfRow; i++) {
+                leftTable.append('<tr><td></td><td></td></tr>')
+            }
+            checkedSelected();
             bindLeftTableEvents();
         }
 
         function checkedSelected() {
-
+            leftTable.find("input[type=checkbox].selector").each(function() {
+                var $this = $(this);
+                var value = $this.attr("value");
+                var selected = rightTable.find("input[name=" + fieldName + "][value=" + value + "]");
+                if(selected.length) {
+                    this.checked = true;
+                }
+            })
         }
 
         function bindLeftTableEvents() {

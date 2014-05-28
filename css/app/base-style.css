@@ -82,3 +82,6 @@
 .two-column td.action, .two-column th{
     text-align: center;
 }
+.two-column .first-column td {
+    height: 30px;
+}

@@ -8,7 +8,6 @@
             <th></th>
             <th>Name</th>
         </tr>
-        <tbody>
         <?php $products->each(function($product){?>
             <tr>
                 <td class="action">
@@ -17,7 +16,6 @@
                 <td class="name">{{$product->name}}</td>
             </tr>
         <?php });?>
-        </tbody>
     </table>
     <div class="footer">
         <?php echo CommonService::paginator($max, $offset, $total); ?>
