@@ -34,7 +34,7 @@ Route::get("/product/create", "ProductController@create");
 Route::post("/product/save", "ProductController@save");
 Route::get("/product/inventory", "ProductController@loadInventoryForm");
 Route::post("/product/updateInventory", "ProductController@updateInventory");
-
+Route::get("/product/selection", "ProductController@productForSelection");
 /*
  * Sign in with GET
  * */
@@ -57,4 +57,6 @@ Route::post('/sign-in',array(
 
 );
 
-Route::get("test", "ProductController@productForSelection");
+Route::get("test", function(){
+    return View::make("product.productSelection");
+});

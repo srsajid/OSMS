@@ -16,9 +16,8 @@ _p.afterTableLoad = function(event, ui) {
     panel.find(".create-pack-product").on("click", function() {
         util.editPopup("Create Table", "test", {
             width: 800,
-
             after_load: function() {
-                util.twoSideSelection(this, "", "included");
+                util.twoSideSelection(this, App.baseUrl + "product/selection", "included");
             }
         });
     })

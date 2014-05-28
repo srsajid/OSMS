@@ -99,7 +99,7 @@ class ProductController extends BaseController {
         $searchText = Input::get("searchText") ? Input::get("searchText") : "";
         $products = ProductService::getProducts();
         $total = ProductService::getCounts();
-        return View::make("product.productSelection", array(
+        return View::make("product.selection", array(
             'products' => $products,
             'total' => $total,
             'max' => $max,

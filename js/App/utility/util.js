@@ -23,21 +23,65 @@ window.dir = function() {
 
 var util = {
     twoSideSelection: function(container, leftTableUrl, fieldName){
-        var leftTable, rightTable, leftTablePaginator;
+        var _self = this;
+        var leftPanel, rightPanel, leftTable, rightTable, leftTablePaginator;
+        var selected = [];
         var globalFunc = {
-            afterSelect: function(){}
-
+            afterSelect: function(row){},
+            beforeLoadLeftTable: function(params) {
+                if(leftTablePaginator) {
+                    params.max = leftTablePaginator.attr("max");
+                    params.offset = leftTablePaginator.attr("offset");
+                }
+            }
         }
         function init() {
-            leftTable = container.find(".first-column.column table");
+            leftPanel = container.find(".first-column");
+            rightPanel = container.find(".last-column");
             rightTable = container.find(".last-column.column table");
-            leftTablePaginator = container.find(".first-column .pagination");
-            leftTablePaginator.paginator();
 
+
+        }
+        function loadLeftTable() {
+            var params = {};
+            globalFunc.beforeLoadLeftTable(params);
+            _self.ajax({
+                url: leftTableUrl,
+                data: params,
+                dataType: "html",
+                success: function(html) {
+                    leftPanel.html(html);
+                    initLeftTable();
+                }
+            })
         }
         function initLeftTable() {
 
+            leftTable = container.find(".first-column.column table");
+            leftTablePaginator = container.find(".pagination");
+            leftTablePaginator.paginator();
+            bindLeftTableEvents();
         }
+
+        function checkedSelected() {
+
+        }
+
+        function bindLeftTableEvents() {
+            leftTable.find("input[type=checkbox].selector").on('change', function() {
+                var checked = this.checked;
+                var $this = $(this);
+                if(checked) {
+                    selectItem($this)
+                } else {
+                    deselectItem($this.attr("value"));
+                }
+            });
+            leftTablePaginator.on("paginator-click", function() {
+                loadLeftTable();
+            })
+        }
+
         function selectItem(item) {
             var name = item.parents("tr:eq(0)").find("td.name").text();
             var value = item.attr("value");
@@ -48,26 +92,18 @@ var util = {
             rightTable.append(template);
             globalFunc.afterSelect(template);
             rightTableRowEvents(template);
+            globalFunc.afterSelect(template);
         }
+
         function deselectItem(item) {
             var checkBox = leftTable.find("input[value="+ item +"].selector");
-            if(checkBox[0].checked) {
+            if(checkBox.length) {
                 checkBox[0].checked = false;
             }
             var selectedRow = rightTable.find("input[name="+ fieldName +"][value="+ item +"]").parents("tr:eq(0)");
             selectedRow.remove();
         }
-        function bindLeftTableEvents() {
-            leftTable.find("input[type=checkbox].selector").on('change', function() {
-                var checked = this.checked;
-                var $this = $(this);
-                if(checked) {
-                    selectItem($this)
-                } else {
-                    deselectItem($this.attr("value"));
-                }
-            })
-        }
+
         function rightTableRowEvents(row) {
             row.find(".glyphicon-remove").on("click", function() {
                 deselectItem(row.find("input[name="+fieldName+"]").val());
@@ -80,8 +116,7 @@ var util = {
         }
         container.loader();
         init();
-        initLeftTable();
-        bindLeftTableEvents();
+        loadLeftTable();
         container.loader(false)
     },
     ajax: function(settings) {
