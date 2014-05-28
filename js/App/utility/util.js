@@ -39,8 +39,6 @@ var util = {
             leftPanel = container.find(".first-column");
             rightPanel = container.find(".last-column");
             rightTable = container.find(".last-column.column table");
-
-
         }
         function loadLeftTable() {
             var params = {};
@@ -58,6 +56,7 @@ var util = {
         function initLeftTable() {
             leftTable = container.find(".first-column.column table");
             leftTablePaginator = container.find(".pagination");
+            leftTablePaginator.addClass("pagination-sm");
             leftTablePaginator.paginator();
             var noOfRow = leftPanel.find("tr").length;
             for(var i = 0; i < 11 - noOfRow; i++) {
