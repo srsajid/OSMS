@@ -58,5 +58,5 @@ Route::post('/sign-in',array(
 );
 
 Route::get("test", function(){
-   return Package::find(1)->products;
+   return Package::find(1)->items;
 });
