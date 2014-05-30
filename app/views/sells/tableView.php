@@ -6,7 +6,7 @@
         <div>
             <div class="navbar-form navbar-right" role="search">
                 <div class="form-group">
-                    <input type="text" name="searchText" class="form-control" placeholder="Search" value="<?php echo($searchText); ?>">
+                    <input type="text" name="searchText" class="form-control" placeholder="Search" value="">
                 </div>
                 <button type="submit" class="btn btn-default search">Search</button>
                 <button type="button" class="btn btn-default btn-sm tool-icon create-product" title="Create Product">
