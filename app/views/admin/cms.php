@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/validation/validationEngine.jquery.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap.icon-large.min.css" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/app/base-style.css" rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
@@ -22,6 +23,7 @@
     <script src="js/App/utility/TableTab.js"></script>
     <script src="js/App/tabs/product-tab.js"></script>
     <script src="js/App/tabs/category-tab.js"></script>
+    <script src="js/App/tabs/package-tab.js"></script>
 
 </head>
 
@@ -50,6 +52,9 @@
 
                     <button type="button" class="btn btn-default btn-lg ribbon-menu-btn" tab-id="category">
                         <span class="glyphicon glyphicon-adjust"></span> Category
+                    </button>
+                    <button type="button" class="btn btn-default btn-lg ribbon-menu-btn" tab-id="package">
+                        <span class="icon-large icon-gift"></span> Package Product
                     </button>
 
                 </div>

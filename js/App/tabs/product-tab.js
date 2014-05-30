@@ -13,14 +13,6 @@ _p.afterTableLoad = function(event, ui) {
     panel.find(".create-product").on("click", function() {
         _self.editProduct();
     })
-    panel.find(".create-pack-product").on("click", function() {
-        util.editPopup("Create Table", "test", {
-            width: 800,
-            after_load: function() {
-                util.twoSideSelection(this, App.baseUrl + "product/selection", "included");
-            }
-        });
-    })
 }
 
 _p.onMenuOptionClick = function(action, data) {

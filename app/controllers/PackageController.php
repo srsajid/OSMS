@@ -6,16 +6,16 @@
  * Time: 4:08 PM
  */
 
-class Package {
+class PackageController extends BaseController{
 
     public function loadTable() {
         $max = Input::get("max") ? intval(Input::get("max")): 10;
         $offset = Input::get("offset") ? intval(Input::get("offset")) : 0;
         $searchText = Input::get("searchText") ? Input::get("searchText") : "";
-        $products = PackageService::getProducts();
+        $packages = PackageService::getPackages();
         $total = PackageService::getCounts();
-        return View::make("product.tableView", array(
-            'products' => $products,
+        return View::make("package.tableView", array(
+            'packages' => $packages,
             'total' => $total,
             'max' => $max,
             'offset' => $offset,
