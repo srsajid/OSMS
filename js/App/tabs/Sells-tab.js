@@ -1,7 +1,7 @@
 /**
  * Created by User on 4/25/14.
  */
-var _c = App.tabs.category =new TableTab("sells", "Sells", "sells/loadTable");
+var _c = App.tabs.sells =new TableTab("sells", "Sells", "sells/loadTable");
 _c.beforeTableLoad = function(event, ui) {
     ui.ajaxSettings.data = {name: "rashad"}
     console.log("befor")
