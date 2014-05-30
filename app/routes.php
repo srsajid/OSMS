@@ -35,6 +35,8 @@ Route::post("/product/save", "ProductController@save");
 Route::get("/product/inventory", "ProductController@loadInventoryForm");
 Route::post("/product/updateInventory", "ProductController@updateInventory");
 Route::get("/product/selection", "ProductController@productForSelection");
+
+Route::get("/package/loadTable", "PackageController@loadTable");
 /*
  * Sign in with GET
  * */
