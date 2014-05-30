@@ -52,7 +52,7 @@
         },
         force_submit: function(settings) {
             var _form = this;
-            if(_form.elm.validationEngine("validate")) {
+            if(!_form.elm.validationEngine("validate")) {
                 return;
             }
             if (this.disable_on_submit) {
