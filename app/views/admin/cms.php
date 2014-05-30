@@ -24,7 +24,7 @@
     <script src="js/App/tabs/product-tab.js"></script>
     <script src="js/App/tabs/category-tab.js"></script>
     <script src="js/App/tabs/package-tab.js"></script>
-    <script src="js/App/tabs/sells-tab.js"></script>
+    <script src="js/App/tabs/Sells-tab.js"></script>
 
 </head>
 
