@@ -57,6 +57,10 @@
                         <span class="icon-large icon-gift"></span> Package Product
                     </button>
 
+                    <button type="button" class="btn btn-default btn-lg ribbon-menu-btn" tab-id="sells">
+                        <span class="glyphicon-barcode"></span> Sells
+                    </button>
+
                 </div>
             </div>
             <div class="row body" style="margin-top: 20px">

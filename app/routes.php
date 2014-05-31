@@ -29,6 +29,10 @@ Route::get("/category", "CategoryController@loadTable");
 Route::get("/category/create", "CategoryController@create");
 Route::post("/category/save", "CategoryController@save");
 
+Route::get("/sells/loadTable", "SellsController@loadTable");
+Route::get("/sells/create", "SellsController@create");
+Route::post("/sells/save", "SellsController@save");
+
 Route::get("/product/loadTable", "ProductController@loadTable");
 Route::get("/product/create", "ProductController@create");
 Route::post("/product/save", "ProductController@save");
