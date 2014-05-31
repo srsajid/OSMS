@@ -39,4 +39,23 @@ class PackageService {
         }
         return Package::count();
     }
+
+    public static function save($name, $items, $quantities) {
+        DB::transaction(function() use ($name, $items, $quantities) {
+            $size = count($items);
+            $package = new Package();
+            $package->name = $name;
+            $package->save();
+            for($i=0; $i < $size; $i++) {
+                $item = (int) $items[$i];
+                $product = Product::find($item);
+                $packageItem = new PackageItem();
+                $packageItem->quantity = (int) $quantities[$i];
+                $packageItem->product()->associate($product);
+                $packageItem->package()->associate($package);
+                $packageItem->save();
+            }
+        });
+        return true;
+    }
 }

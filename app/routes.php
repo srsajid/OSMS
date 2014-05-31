@@ -41,6 +41,8 @@ Route::post("/product/updateInventory", "ProductController@updateInventory");
 Route::get("/product/selection", "ProductController@productForSelection");
 
 Route::get("/package/loadTable", "PackageController@loadTable");
+Route::get("/package/create", "PackageController@create");
+Route::post("/package/save", "PackageController@save");
 /*
  * Sign in with GET
  * */
@@ -64,5 +66,5 @@ Route::post('/sign-in',array(
 );
 
 Route::get("test", function(){
-   return Package::find(1)->items;
+   return Package::find(3)->items;
 });

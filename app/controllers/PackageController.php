@@ -23,4 +23,25 @@ class PackageController extends BaseController{
         ));
     }
 
+    public function create() {
+       return View::make("package.create");
+    }
+
+    public function save() {
+        $x = 100;
+        $name = Input::get("name");
+        $items = json_decode(Input::get("items"));
+        $quantities = json_decode(Input::get("quantities"));
+        $result = null;
+        try{
+            $result = PackageService::save($name, $items, $quantities);
+        } catch(Exception $e) {
+            $result = false;
+        }
+        if($result) {
+            return array('status' => 'success', 'message' => 'Package has been saved successfully');
+        }
+        return array('status' => 'error', 'message' => 'Package save operation has been failed');
+    }
+
 }

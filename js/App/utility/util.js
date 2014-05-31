@@ -41,6 +41,7 @@ var util = {
             rightTable = container.find(".last-column.column table");
         }
         function loadLeftTable() {
+            leftPanel.loader();
             var params = {};
             globalFunc.beforeLoadLeftTable(params);
             _self.ajax({
@@ -50,6 +51,7 @@ var util = {
                 success: function(html) {
                     leftPanel.html(html);
                     initLeftTable();
+                    leftPanel.loader(false);
                 }
             })
         }
@@ -100,7 +102,6 @@ var util = {
                 '<input type="hidden" name="'+ fieldName +'" value="'+ value + '"></td></tr>';
             template = $(template)
             rightTable.append(template);
-            globalFunc.afterSelect(template);
             rightTableRowEvents(template);
             globalFunc.afterSelect(template);
         }
@@ -128,6 +129,7 @@ var util = {
         init();
         loadLeftTable();
         container.loader(false)
+        return globalFunc;
     },
     ajax: function(settings) {
         var defaults  = {
@@ -178,6 +180,7 @@ var util = {
         }
         defaults = $.extend(defaults, config)
         var dom = $('<div class="edit-popup-container"></div>');
+        dom.width(defaults.width);
         dom.loader();
         dom.dialog($.extend({
             create: function() {
@@ -207,7 +210,10 @@ var util = {
                 ajax: true,
                 preSubmit: function(ajaxSettings) {
                     if(typeof defaults.preSubmit == "function") {
-                        defaults.preSubmit.call(dom, ajaxSettings)
+                        var rtn = defaults.preSubmit.call(dom, ajaxSettings)
+                        if(rtn == false ) {
+                            return false;
+                        }
                     }
                     $.extend(ajaxSettings, {
                         success: function(resp) {
