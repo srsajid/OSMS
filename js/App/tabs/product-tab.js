@@ -24,12 +24,25 @@ _p.onMenuOptionClick = function(action, data) {
         case "inventory-update":
             _self.loadInventoryForm(data.id);
             break;
+        case "view":
+            _self.view(data.id);
+            break;
     }
 }
 
 _p.editProduct = function(id){
     var _self = this;
-    util.editPopup("Create Table", "product/create", {
+    util.editPopup("Edit Product", "product/create", {
+        success: function() {
+            _self.reload();
+        },
+        data: {id: id}
+    });
+}
+
+_p.view = function(id){
+    var _self = this;
+    util.editPopup("Product Details", "product/view", {
         success: function() {
             _self.reload();
         },

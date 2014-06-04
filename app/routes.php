@@ -27,6 +27,7 @@ Route::get("/admin", array('as' => 'admin',function(){
 
 Route::get("/category", "CategoryController@loadTable");
 Route::get("/category/create", "CategoryController@create");
+Route::get("/category/edit", "CategoryController@edit");
 Route::post("/category/save", "CategoryController@save");
 
 Route::get("/sells/loadTable", "SellsController@loadTable");
@@ -35,6 +36,7 @@ Route::post("/sells/save", "SellsController@save");
 
 Route::get("/product/loadTable", "ProductController@loadTable");
 Route::get("/product/create", "ProductController@create");
+Route::get("/product/view", "ProductController@view");
 Route::post("/product/save", "ProductController@save");
 Route::get("/product/inventory", "ProductController@loadInventoryForm");
 Route::post("/product/updateInventory", "ProductController@updateInventory");

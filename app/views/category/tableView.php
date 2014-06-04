@@ -10,7 +10,7 @@
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
                 <button type="button" class="btn btn-default btn-sm create-category" title="Create Category">
-                    <span class="glyphicon glyphicon-camera"></span>
+                    <span class="glyphicon glyphicon-plus-sign"></span>
                 </button>
             </div>
         </div>
@@ -40,14 +40,8 @@
                 <td><?php echo $category->name; ?></td>
                 <td><?php  ?></td>
                 <td>
-                    <button type="button" class="btn btn-default btn-xs">
-                        <span class="glyphicon glyphicon-camera"></span>
-                    </button>
-                    <button type="button" class="btn btn-default btn-xs">
-                        <span class="glyphicon glyphicon-camera"></span>
-                    </button>
-                    <button type="button" class="btn btn-default btn-xs">
-                        <span class="glyphicon glyphicon-camera"></span>
+                    <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $category->id; ?>" action="edit" title="Edit Category">
+                        <span class="glyphicon glyphicon-pencil"></span>
                     </button>
                 </td>
             </tr>

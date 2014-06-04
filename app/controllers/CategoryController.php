@@ -61,7 +61,16 @@ class CategoryController extends BaseController {
 	 */
 	public function edit($id)
 	{
-
+        $id = Input::has("id") ? intval(Input::get("id")) : null;
+        $category = null;
+        if($id) {
+            $category = Category::find($id);
+        } else {
+            $category = new Category();
+        }
+        return View::make("category.edit", array(
+            'category' => $category,
+        ));
 	}
 
 

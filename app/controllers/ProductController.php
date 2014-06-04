@@ -22,6 +22,21 @@ class ProductController extends BaseController {
         ));
     }
 
+    public  function  view(){
+        $id = Input::has("id") ? intval(Input::get("id")) : null;
+        $product = null;
+        if($id) {
+            $product = Product::find($id);
+        } else {
+            $product = new Product();
+        }
+        $categories = Category::find($product->category_id);
+        return View::make("product.view", [
+            'product' => $product,
+            'categories' => $categories
+        ]);
+    }
+
     public function create() {
         $id = Input::has("id") ? intval(Input::get("id")) : null;
         $product = null;

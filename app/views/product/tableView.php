@@ -56,7 +56,7 @@
                         <span class="glyphicon glyphicon-pencil"></span>
                     </button>
                     <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="view" title="View Product">
-                        <span class="glyphicon glyphicon-camera action-menu"></span>
+                        <span class="glyphicon glyphicon-resize-full"></span>
                     </button>
                     <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $product->id; ?>" action="inventory-update" title="Update Inventory">
                         <span class="glyphicon glyphicon-upload"></span>

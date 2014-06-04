@@ -1,6 +1,6 @@
 <form class="form-horizontal create-edit-form" role="form" action="category/save" method="post">
     <div class="form-group">
-        <label class="col-sm-2 control-label">Email</label>
+        <label class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
             <input type="text" name="name" class="form-control" placeholder="Category Name">
         </div>
