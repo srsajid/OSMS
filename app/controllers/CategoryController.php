@@ -68,7 +68,7 @@ class CategoryController extends BaseController {
         } else {
             $category = new Category();
         }
-        return View::make("category.edit", array(
+        return View::make("category.update", array(
             'category' => $category,
         ));
 	}
