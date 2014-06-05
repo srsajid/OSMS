@@ -61,7 +61,7 @@ class CategoryController extends BaseController {
 	 */
 	public function edit($id)
 	{
-        $id = Input::has("id") ? intval(Input::get("id")) : null;
+        //$id = Input::has("id") ? intval(Input::get("id")) : null;
         $category = null;
         if($id) {
             $category = Category::find($id);
@@ -72,8 +72,6 @@ class CategoryController extends BaseController {
             'category' => $category,
         ));
 	}
-
-
 	/**
 	 * Update the specified resource in storage.
 	 *
