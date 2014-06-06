@@ -23,7 +23,7 @@ class CreateStudentTable extends Migration {
             $table->string("email",100);
             $table->boolean("hasTransport");
             $table->float("transport_cost");
-            $table->string("class",100);
+            $table->string("clazz",100);
             $table->string("section",100);
             $table->string("shift",100);
             $table->boolean("has_rid");
