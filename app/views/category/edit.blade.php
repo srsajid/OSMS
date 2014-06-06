@@ -2,7 +2,7 @@
     <div class="form-group">
         <label class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
-            <input type="text" name="name" class="form-control" placeholder="Category Name" readonly="true" value="<?php echo $category->name;?>">
+            <input type="text" name="name" class="form-control" placeholder="Category Name"  value="">
         </div>
     </div>
     <div class="form-group">
