@@ -1,7 +1,7 @@
 /**
  * Created by User on 4/25/14.
  */
-var _s = App.tabs.sells =new TableTab("sells", "Sells", "sells/loadTable");
+var _s = App.tabs.sells = new TableTab("sells", "Sells", "sells/loadTable");
 
 _s.beforeTableLoad = function(event, ui) {
 
