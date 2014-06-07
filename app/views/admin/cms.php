@@ -62,6 +62,10 @@
                         <span class="glyphicon-barcode"></span> Sells
                     </button>
 
+                    <button type="button" class="btn btn-default btn-lg ribbon-menu-btn" tab-id="admission">
+                        <span class="glyphicon glyphicon-user"></span> Admission
+                    </button>
+
                 </div>
             </div>
             <div class="row body" style="margin-top: 20px">
