@@ -1,10 +1,8 @@
 /**
  * Created by User on 4/25/14.
  */
-var _c = App.tabs.category =new TableTab("admission", "Admission", "admission");
+var _c = App.tabs.admission =new TableTab("admission", "Admission", "admission");
 _c.beforeTableLoad = function(event, ui) {
-    ui.ajaxSettings.data = {name: "aAJID"}
-    console.log("befor")
 }
 _c.afterTableLoad = function(event, ui) {
     var _self = this;

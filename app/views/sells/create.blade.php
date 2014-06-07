@@ -1,5 +1,5 @@
 <div class="search">
-
+   {{ Form::select("packSelector", $packages) }}
 </div>
 <div class="selection-table-container">
 

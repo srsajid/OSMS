@@ -14,7 +14,12 @@ class SellsController extends BaseController {
     }
 
     public function create() {
-        return View::make("sells.create");
+        $packageList = Package::all();
+        $packages = array('' => "None");
+        foreach($packageList as $pack) {
+            $packages[$pack->id] = $pack->name;
+        }
+        return View::make("sells.create", array('packages' => $packages));
     }
 
     public function save() {
