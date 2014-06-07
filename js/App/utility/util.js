@@ -238,6 +238,7 @@ var util = {
                 }
             })
         }
+        return dom
     },
     notify: function(message, type) {
         alert(message);

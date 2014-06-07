@@ -100,3 +100,15 @@
 .two-column .first-column td {
     height: 30px;
 }
+table.srui-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.srui-table th, table.srui-table td {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+table.srui-table th{
+    text-align: center;
+}

@@ -1,18 +1,26 @@
 /**
  * Created by User on 4/25/14.
  */
-var _c = App.tabs.sells =new TableTab("sells", "Sells", "sells/loadTable");
-_c.beforeTableLoad = function(event, ui) {
-    ui.ajaxSettings.data = {name: "rashad"}
-    console.log("befor")
+var _s = App.tabs.sells =new TableTab("sells", "Sells", "sells/loadTable");
+
+_s.beforeTableLoad = function(event, ui) {
+
 }
-_c.afterTableLoad = function(event, ui) {
+
+_s.afterTableLoad = function(event, ui) {
     var _self = this;
     var panel = ui.panel;
-    panel.find(".create-category").on("click", function(){
-        util.editPopup("Select Items", "sells", {
-            success: function() {
-                _self.reload();
+    panel.find(".create-sells").on("click", function(){
+        var popup = util.editPopup("Select Items", App.baseUrl + "sells/create", {
+            after_load: function() {
+                var dom = this;
+                var selectionTableContainer = dom.find(".selection-table-container");
+                var sellsTableContainer = dom.find(".sells-item-table-container");
+                function loadSelectionTable() {
+                    util.ajax({
+                        url: App.baseUrl + "sells/selection"
+                    })
+                }
             }
         });
     });
