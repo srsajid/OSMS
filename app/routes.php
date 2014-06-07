@@ -33,6 +33,7 @@ Route::post("/category/save", "CategoryController@save");
 Route::get("/sells/loadTable", "SellsController@loadTable");
 Route::get("/sells/create", "SellsController@create");
 Route::post("/sells/save", "SellsController@save");
+Route::get("/sells/selection", "SellsController@selection");
 
 Route::get("/product/loadTable", "ProductController@loadTable");
 Route::get("/product/create", "ProductController@create");

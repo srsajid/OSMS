@@ -23,5 +23,26 @@ class SellsController extends BaseController {
     }
 
     public function save() {
+
+    }
+
+    public function selection() {
+        $packageId = Input::get("package");
+        if($packageId) {
+            $package = Package::find(intval($packageId));
+            return View::make("sells.packSelection", array('pack' => $package));
+        }
+        $max = Input::get("max") ? intval(Input::get("max")): 10;
+        $offset = Input::get("offset") ? intval(Input::get("offset")) : 0;
+        $searchText = Input::get("searchText") ? Input::get("searchText") : "";
+        $products = ProductService::getProducts();
+        $total = ProductService::getCounts();
+        return View::make("sells.productsSelection", array(
+            'products' => $products,
+            'total' => $total,
+            'max' => $max,
+            'offset' => $offset,
+            'searchText' => $searchText
+        ));
     }
 }
