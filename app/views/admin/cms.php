@@ -35,7 +35,7 @@
             <div class="row navigation">
                 <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="">SMA</a>
+                        <a class="navbar-brand" href="">Changes</a>
                     </div>
                     <div>
                         <ul class="nav navbar-nav">
