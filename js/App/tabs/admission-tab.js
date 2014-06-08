@@ -1,7 +1,7 @@
 /**
  * Created by User on 4/25/14.
  */
-var _c = App.tabs.admission = new TableTab("admission", "Admission", "admission");
+var _c = App.tabs.admission = new TableTab("admission", "admission", "admission");
 
 _c.beforeTableLoad = function(event, ui) {
 }

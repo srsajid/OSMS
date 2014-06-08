@@ -25,6 +25,8 @@ Route::get("/admin", array('as' => 'admin',function(){
     return View::make("admin.cms");
 }))->before("auth");
 
+Route::get("/admission", "AdmissionController@loadTable");
+
 Route::get("/category", "CategoryController@loadTable");
 Route::get("/category/create", "CategoryController@create");
 Route::get("/category/edit", "CategoryController@edit");
