@@ -9,7 +9,7 @@ _c.afterTableLoad = function(event, ui) {
     var _self = this;
     var panel = ui.panel;
     panel.find(".create-admission").on("click", function(){
-        util.editPopup("Create Student", "admission/admissionForm", {
+        util.editPopup("Create Student", "admission/create", {
             success: function() {
                 _self.reload();
             }

@@ -28,8 +28,8 @@ class AdmissionService {
             array_push($array, "%".$text."%");
         }
         if(count($array) > 0 ) {
-            return CreateStudentTable::whereRaw($query, $array)->count();
+            return Student::whereRaw($query, $array)->count();
         }
-        return CreateStudentTable::count();
+        return Student::count();
     }
 }

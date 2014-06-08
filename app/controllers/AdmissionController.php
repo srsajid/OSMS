@@ -14,4 +14,8 @@ Class AdmissionController extends BaseController{
             'searchText' => $searchText
         ));
     }
+    public function create()
+    {
+        return View::make("admission.create");
+    }
 }

@@ -26,6 +26,7 @@ Route::get("/admin", array('as' => 'admin',function(){
 }))->before("auth");
 
 Route::get("/admission", "AdmissionController@loadTable");
+Route::get("/admission/create", "AdmissionController@create");
 
 Route::get("/category", "CategoryController@loadTable");
 Route::get("/category/create", "CategoryController@create");
