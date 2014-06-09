@@ -16,7 +16,7 @@ _s.afterTableLoad = function(event, ui) {
             after_load: function() {
                 var dom = this;
                 var selectionTableContainer = dom.find(".selection-table-container");
-                var sellsTableContainer = dom.find(".sells-item-table-container");
+                var sellsTable = dom.find(".sells-item-table-container table");
                 var packSelector = dom.find("select[name=packSelector]");
                 var searchText = dom.find("input[name=searchText]");
                 var searchArea = dom.find(".search-area")
@@ -31,13 +31,24 @@ _s.afterTableLoad = function(event, ui) {
                         }
                     })
                 }
+                function addRow() {
+                    var row = '<tr><td>#NAME#</td><td class="price">#PRICE#</td><td class="editable">#QUANTITY<#/td><td class="total">#TOTAL#</td><td><span class="glyphicon glyphicon-remove"></span></td></tr>'
+                }
                 function bindSelectionEvents(table) {
                     var pagination = table.find(".pagination");
+                    var table = selectionTableContainer.find("table");
                     pagination.addClass("pagination-sm");
                     pagination.paginator();
                     pagination.on("paginator-click", function() {
                         loadSelectionTable(pagination.attr("offset"));
                     })
+
+                    table.find("tr:gt(0)").on("click", function() {
+                        var tr = $(this)
+                        var data = tr.config("product");
+
+                    })
+
                 }
                 function bindEvents() {
                     packSelector.on("change", function() {

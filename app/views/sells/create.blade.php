@@ -18,15 +18,17 @@
 <div class="sells-item-table-container">
     <table class="srui-table">
         <colgroup>
-            <col style="width: 30%">
             <col style="width: 20%">
             <col style="width: 20%">
-            <col style="width: 30%">
+            <col style="width: 20%">
+            <col style="width: 20%">
+            <col style="width: 20%">
         </colgroup>
         <tr>
             <th>Name</th>
-            <th>Quantity</th>
             <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
             <th>Action</th>
         </tr>
     </table>

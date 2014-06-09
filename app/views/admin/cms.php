@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="css/validation/validationEngine.jquery.css" type="text/css"/>
     <link rel="stylesheet" href="css/bootstrap.icon-large.min.css" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/alertify/alertify.core.css" rel="stylesheet" media="screen">
+    <link href="css/alertify/alertify.default.css" rel="stylesheet" media="screen">
     <link href="css/app/base-style.css" rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/App/App.js"></script>
     <script src="js/App/utility/form.jquery.js"></script>
+    <script src="js/App/utility/alertify.min.js"></script>
     <script src="js/App/utility/util.js"></script>
     <script src="js/App/utility/prototype.js"></script>
     <script src="js/validation/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>

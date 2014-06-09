@@ -21,7 +21,7 @@
             }).addClass("div-mask");
             tag.append(maskHtml);
         }
-    }
+    };
 
     $.fn.paginator = function() {
         this.each(function() {
@@ -48,6 +48,34 @@
             })
         })
 
+    };
+
+    $.fn.config = function(type, updates) {
+        var cacheKey = "attr-parsed-cache#" + type;
+        var map = this.data(cacheKey)
+        if(!map) {
+            map = {}
+            this.data(cacheKey, map)
+            var cutLength = type.length + 1
+            $.each(this[0].attributes, function() {
+                if(this.name.startsWith(type + "-")) {
+                    map[this.name.substring(cutLength)] = utility.autoType(this.value);
+                }
+            })
+        }
+        if(updates) {
+            if(typeof updates == "string") {
+                return map[updates]
+            } else {
+                var obj = $(this);
+                $.each(updates, function(k, v) {
+                    map[k] = v
+                    obj.attr(type + "-" + k, v)
+                })
+                return this;
+            }
+        }
+        return map;
     }
 
 }(jQuery))

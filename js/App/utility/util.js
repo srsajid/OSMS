@@ -241,6 +241,10 @@ var util = {
         return dom
     },
     notify: function(message, type) {
-        alert(message);
+        if(type == "success") {
+            alertify.success(message);
+        } else {
+            alertify.error(message)
+        }
     }
 }
