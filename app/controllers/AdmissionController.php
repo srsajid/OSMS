@@ -18,4 +18,26 @@ Class AdmissionController extends BaseController{
     {
         return View::make("admission.create");
     }
+
+    public function save()
+    {
+        $name = Input::get("student_name");
+        $father_name = Input::get("father_name");
+        $mother_name = Input::get("mother_name");
+        $gender = Input::get("gender");
+        $nationality = Input::get("nationality");
+        $religion = Input::get("religion");
+        $address = Input::get("address");
+        $contact_number = Input::get("contact_number");
+        $transport = Input::get("transport");
+        $clazz = Input::get("clazz");
+        $section = Input::get("section");
+        $shift = Input::get("shift");
+        $rsidn = Input::get("rsidn");
+        $rsidclass = Input::get("rsidclass");
+        $rsidsection = Input::get("rsidsection");
+        $transportfee = Input::get("transportfee");
+
+
+}
 }

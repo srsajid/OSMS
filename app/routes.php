@@ -27,6 +27,7 @@ Route::get("/admin", array('as' => 'admin',function(){
 
 Route::get("/admission", "AdmissionController@loadTable");
 Route::get("/admission/create", "AdmissionController@create");
+Route::post("/admission/save", "AdmissionController@save");
 
 Route::get("/category", "CategoryController@loadTable");
 Route::get("/category/create", "CategoryController@create");
