@@ -10,6 +10,7 @@ class CreateStudentTable extends Migration {
         Schema::create("students", function(Blueprint $table){
             $table->increments("id");
             $table->string("name",250);
+            $table->string("sid",250);
             $table->string("father_name",250);
             $table->string("mother_name",250);
             $table->string("guardian_name",250);
