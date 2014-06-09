@@ -31,8 +31,35 @@ _s.afterTableLoad = function(event, ui) {
                         }
                     })
                 }
-                function addRow() {
-                    var row = '<tr><td>#NAME#</td><td class="price">#PRICE#</td><td class="editable">#QUANTITY<#/td><td class="total">#TOTAL#</td><td><span class="glyphicon glyphicon-remove"></span></td></tr>'
+                function addRow(data) {
+                    var row = '<tr><td>#NAME#</td><td class="price">#PRICE#</td>' +
+                        '<td class="editable"><span class="value">#QUANTITY#</span></td>' +
+                        '<td class="total">#TOTAL#</td><td><span class="glyphicon glyphicon-remove"></span></td></tr>';
+                    row = row.replace("#NAME#", data.name);
+                    row = row.replace("#PRICE#", data.price);
+                    row = row.replace("#QUANTITY#", data.quantity);
+                    var total = (data.price  * data.quantity).toFixed(2);
+                    row = row.replace("#TOTAL#", total);
+                    row = $(row);
+                    row.attr("id", data.id)
+                    row.attr("stock", data.stock);
+                    row.attr("price", data.price);
+                    row.attr("quantity", data.quantity);
+                    sellsTable.append(row);
+                    util.makeTableCellEditAble(row.find("td.editable"), function(td, newVal) {
+                        var old = row.attr("quantity")
+                        if(isNaN(newVal) || newVal.indexOf(".") > -1) {
+                            util.notify("Invalid Quantity", "error");
+                            td.find(".value").text(old);
+                        } else if(parseInt(row.attr("stock")) < parseInt(newVal)) {
+                            util.notify("Out of stock quantity", "error");
+                            td.find(".value").text(old);
+                        } else {
+                            row.attr("quantity", newVal);
+                            var total = (newVal * row.attr("price")).toFixed(2);
+                            row.find(".total").text(total);
+                        }
+                    });
                 }
                 function bindSelectionEvents(table) {
                     var pagination = table.find(".pagination");
@@ -46,7 +73,14 @@ _s.afterTableLoad = function(event, ui) {
                     table.find("tr:gt(0)").on("click", function() {
                         var tr = $(this)
                         var data = tr.config("product");
-
+                        if(sellsTable.find("[id=" + data.id + "]").size() > 0) {
+                            util.notify("Already added in list", "error");
+                        } else if(parseInt(data.quantity) > parseInt(data.stock)) {
+                            util.notify("Item not in stock", "error");
+                        }
+                        else {
+                            addRow(data);
+                        }
                     })
 
                 }

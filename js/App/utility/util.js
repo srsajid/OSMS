@@ -246,5 +246,54 @@ var util = {
         } else {
             alertify.error(message)
         }
+    },
+    autoType: function(value) {
+        if(/^\s*\d+(.\d*)?\s*$/.test(value)) {
+            return +value;
+        }
+        if(/^\s*(true|yes)\s*$/.test(value)) {
+            return true;
+        }
+        if(/^\s*(false|no)\s*$/.test(value)) {
+            return false;
+        }
+        return value;
+    },
+
+    makeTableCellEditAble: function(tds, callback) {
+        function editingTd() {
+            var icon = $(this);
+            var td = icon.parent();
+            td.addClass("editing");
+            var tdVal = td.find(".value");
+            tdVal.hide();
+            td.append("<input type='text' class='td-full-width' value='" + tdVal.text() + "'/>");
+            var restrict = td.attr("restrict");
+            var editField = td.find("input[type=text]");
+            if(restrict) {
+                editField.attr("restrict", restrict);
+                editField[editField.attr("restrict")]();
+            }
+            var input = editField.get(0);
+            input.selectionStart = input.selectionEnd = input.value.length;
+            input.focus();
+            editField.focusout(function(){
+                var editFieldVal = $(this).val() ? $(this).val() : "";
+                tdVal.text(editFieldVal);
+                editField.remove();
+                if(callback) {
+                    callback(td, editFieldVal);
+                }
+                td.removeClass("editing");
+                tdVal.show();
+            });
+        }
+
+        tds.each(function(){
+            var td = $(this);
+            td.append('<span class="glyphicon glyphicon-pencil tool-icon edit"></span>');
+            var editBtn = td.find(".edit");
+            editBtn.on("click", editingTd);
+        });
     }
 }

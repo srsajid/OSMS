@@ -112,3 +112,23 @@ table.srui-table th, table.srui-table td {
 table.srui-table th{
     text-align: center;
 }
+
+td .td-full-width {
+    width: calc(100% - 12px);
+}
+
+td.editable:hover .edit {
+    display : inline;
+}
+td.editable .edit,
+td.editable.editing .edit {
+    display : none;
+    float   : right;
+}
+
+.selection-table-container table tr {
+    cursor: pointer;
+}
+.sells-item-table-container {
+    margin-top: 20px;
+}

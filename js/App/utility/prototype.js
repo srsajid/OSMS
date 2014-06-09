@@ -1,6 +1,17 @@
 /**
  * Created by User on 5/23/14.
  */
+if (!String.prototype.startsWith) {
+    String.prototype.startsWith = function (str) {
+        return this.indexOf(str) === 0;
+    };
+}
+
+String.prototype.replaceAll = function(search, replace) {
+        var reg = new RegExp(search, "g");
+        return this.replace(reg, replace)
+};
+
 (function($){
 
     $.fn.loader = function(show) {
@@ -59,7 +70,7 @@
             var cutLength = type.length + 1
             $.each(this[0].attributes, function() {
                 if(this.name.startsWith(type + "-")) {
-                    map[this.name.substring(cutLength)] = utility.autoType(this.value);
+                    map[this.name.substring(cutLength)] = util.autoType(this.value);
                 }
             })
         }
@@ -79,3 +90,4 @@
     }
 
 }(jQuery))
+
