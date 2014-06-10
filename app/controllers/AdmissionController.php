@@ -22,9 +22,9 @@ Class AdmissionController extends BaseController{
     public function save()
     {
         $student_img = Input::file("student_img");
-        $student_img = Input::file("father_img");
-        $student_img = Input::file("mother_img");
-        $student_img = Input::file("guardians_img");
+        $father_img = Input::file("father_img");
+        $mother_img = Input::file("mother_img");
+        $guardian_img = Input::file("guardians_img");
         $student_id = Input::get("student_ID");
         $name = Input::get("student_name");
         $father_name = Input::get("father_name");
