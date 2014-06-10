@@ -31,5 +31,14 @@
             <th>Total</th>
             <th>Action</th>
         </tr>
+        <tr class="last-row">
+            <td colspan="3">Total</td>
+            <td class="grand-total" colspan="2"></td>
+        </tr>
     </table>
+</div>
+<div class="form-group">
+    <div class="col-sm-offset-10 col-sm-2" style="margin-top: 10px">
+        <button type="submit" class="btn btn-default sells-create-btn" style="padding: 8px 25px">Create</button>
+    </div>
 </div>
