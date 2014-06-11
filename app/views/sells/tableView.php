@@ -25,17 +25,23 @@
             <col style="">
             <col style="">
         </colgroup>
-        <thead>
         <tr>
             <th>Id</th>
             <th>Total</th>
             <th>Date</th>
+            <th>Sells By</th>
             <th>Actions</th>
         </tr>
-        </thead>
-        <tbody>
+        <?php $sells->each(function($sell){ ?>
+            <tr>
+                <td><?php echo $sell->id;?></td>
+                <td></td>
+                <td><?php echo $sell->created_at; ?></td>
+                <td><?php echo $sell->user->username; ?></td>
+                <td></td>
+            </tr>
+        <?php }); ?>
 
-        </tbody>
     </table>
 </div>
 <div class="footer">

@@ -7,6 +7,18 @@
  */
 
 class SellsService {
+
+    public static function  getSells($params) {
+        $max = (int) $params["max"];
+        $offset = (int) $params["offset"];
+        $sells = Sell::take($max)->skip($offset)->orderBy('id', "DESC");
+        return $sells->get();
+    }
+
+    public static function getCounts($params) {
+        return Sell::count();
+    }
+
     public static function save($ids, $quantities) {
         if(!Auth::check()) {
             throw new Exception("No user logged in");

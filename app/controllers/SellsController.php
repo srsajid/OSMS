@@ -10,7 +10,15 @@ class SellsController extends BaseController {
     public function loadTable() {
         $max = Input::has("max") ? Input::get("max") : "10";
         $offset = Input::has("offset") ? Input::get("offset") : "0";
-        return View::make("sells.tableView", array('total' => 10, 'max' => $max, 'offset' => $offset));
+        $params = array('max' => $max, 'offset'=> $offset );
+        $sells = SellsService::getSells($params);
+        $count = SellsService::getCounts($params);
+        return View::make("sells.tableView", array(
+            'sells' => $sells,
+            'total' => $count,
+            'max' => $max,
+            'offset' => $offset
+        ));
     }
 
     public function create() {
