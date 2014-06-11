@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AccountController' => $baseDir . '/app/controllers/AccountController.php',
+    'AddQauntityInSellsItem' => $baseDir . '/app/database/migrations/2014_06_10_162559_add_qauntity_in_sellsItem.php',
     'AdmissionController' => $baseDir . '/app/controllers/AdmissionController.php',
     'AdmissionService' => $baseDir . '/app/services/AdmissionService.php',
     'Author' => $baseDir . '/app/models/Author.php',
@@ -43,6 +44,7 @@ return array(
     'SellItemTable' => $baseDir . '/app/database/migrations/2014_06_06_165947_sellItemTable.php',
     'SellTable' => $baseDir . '/app/database/migrations/2014_06_06_165940_sellTable.php',
     'SellsController' => $baseDir . '/app/controllers/SellsController.php',
+    'SellsService' => $baseDir . '/app/services/SellsService.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
     'Student' => $baseDir . '/app/models/Student.php',
     'TestCase' => $baseDir . '/app/tests/TestCase.php',

@@ -22,10 +22,6 @@ class SellsController extends BaseController {
         return View::make("sells.create", array('packages' => $packages));
     }
 
-    public function save() {
-
-    }
-
     public function selection() {
         $packageId = Input::get("package");
         if($packageId) {
@@ -44,5 +40,20 @@ class SellsController extends BaseController {
             'offset' => $offset,
             'searchText' => $searchText
         ));
+    }
+
+    public function save() {
+        $ids = json_decode(Input::get("ids"));
+        $quantities = json_decode(Input::get("quantities"));
+        $result = null;
+        try {
+            $result = SellsService::save($ids, $quantities);
+        } catch(Exception $e) {
+            $result = false;
+        }
+        if($result) {
+            return array('status' => 'success', 'message' => 'Sells has been created successfully');
+        }
+        return array('status' => 'error', 'message' => 'Sells has been failed');
     }
 }

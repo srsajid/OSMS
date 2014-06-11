@@ -7,6 +7,7 @@
  */
 
 class SellItem extends Eloquent {
+    public $timestamps = false;
     public function sell() {
         return $this->belongsTo("Sell");
     }

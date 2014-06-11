@@ -31,21 +31,33 @@ _s.afterTableLoad = function(event, ui) {
                         }
                     })
                 }
+                function updateGrandTotal() {
+                    var total = 0.0;
+                    sellsTable.find("tr:gt(0):not(.last-row)").each(function() {
+                        var row = $(this);
+                        total = total + (row.attr("price") * row.attr("quantity"))
+                    })
+                    sellsTable.find("td.grand-total").text(total);
+                }
                 function addRow(data) {
                     var row = '<tr><td>#NAME#</td><td class="price">#PRICE#</td>' +
                         '<td class="editable"><span class="value">#QUANTITY#</span></td>' +
-                        '<td class="total">#TOTAL#</td><td><span class="glyphicon glyphicon-remove"></span></td></tr>';
+                        '<td class="total">#TOTAL#</td><td><span class="glyphicon glyphicon-remove remove"></span></td></tr>';
                     row = row.replace("#NAME#", data.name);
                     row = row.replace("#PRICE#", data.price);
                     row = row.replace("#QUANTITY#", data.quantity);
                     var total = (data.price  * data.quantity).toFixed(2);
                     row = row.replace("#TOTAL#", total);
                     row = $(row);
-                    row.attr("id", data.id)
+                    row.attr("product-id", data.id)
                     row.attr("stock", data.stock);
                     row.attr("price", data.price);
                     row.attr("quantity", data.quantity);
-                    sellsTable.append(row);
+                    sellsTable.find("tr.last-row").before(row);
+                    updateGrandTotal();
+                    row.find("span.remove").on("click", function() {
+                        row.remove();
+                    })
                     util.makeTableCellEditAble(row.find("td.editable"), function(td, newVal) {
                         var old = row.attr("quantity")
                         if(isNaN(newVal) || newVal.indexOf(".") > -1) {
@@ -58,6 +70,7 @@ _s.afterTableLoad = function(event, ui) {
                             row.attr("quantity", newVal);
                             var total = (newVal * row.attr("price")).toFixed(2);
                             row.find(".total").text(total);
+                            updateGrandTotal();
                         }
                     });
                 }
@@ -73,7 +86,7 @@ _s.afterTableLoad = function(event, ui) {
                     table.find("tr:gt(0)").on("click", function() {
                         var tr = $(this)
                         var data = tr.config("product");
-                        if(sellsTable.find("[id=" + data.id + "]").size() > 0) {
+                        if(sellsTable.find("[product-id=" + data.id + "]").size() > 0) {
                             util.notify("Already added in list", "error");
                         } else if(parseInt(data.quantity) > parseInt(data.stock)) {
                             util.notify("Item not in stock", "error");
@@ -97,6 +110,37 @@ _s.afterTableLoad = function(event, ui) {
                     })
                     dom.find("button.search").on("click", function() {
                         loadSelectionTable();
+                    })
+                    dom.find(".sells-create-btn").on("click", function(){
+                        if(sellsTable.find("tr").size() < 3 ) {
+                            util.notify("No item added in list.")
+                            return;
+                        }
+                        var ids = [];
+                        var quantities =  [];
+                        sellsTable.find("tr:gt(0):not(.last-row)").each(function() {
+                            var row = $(this);
+                            ids.push(row.attr("product-id"));
+                            quantities.push(row.attr("quantity"));
+                        })
+                        util.ajax({
+                            url: App.baseUrl + "sells/save",
+                            data: {ids: JSON.stringify(ids), quantities: JSON.stringify(quantities)},
+                            type: "POST",
+                            dataType: "json",
+                            success: function(resp) {
+                                if(resp.status != "success") {
+                                    this.error(null, null, resp);
+                                    return;
+                                }
+                                util.notify(resp.message, "success");
+                                dom.dialog("close");
+                                _self.reload();
+                            },
+                            error: function(a, b, resp) {
+                                util.notify(resp.message ? resp.message : "Unexpected error occurred", "error");
+                            }
+                        })
                     })
                 }
                 loadSelectionTable();
