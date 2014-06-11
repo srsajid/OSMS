@@ -21,7 +21,7 @@ Class AdmissionController extends BaseController{
 
     public function save()
     {
-        $student_img = Input::file("student_img");
+        $student_img = Input::file("student_image");
         $father_img = Input::file("father_img");
         $mother_img = Input::file("mother_img");
         $guardian_img = Input::file("guardians_img");
@@ -46,8 +46,18 @@ Class AdmissionController extends BaseController{
         $rsidsection = Input::get("rsidsection");
         $transportfee = Input::get("transportfee");
         $hasEntry = Student::find($student_id);
-        if($hasEntry){
+        if($hasEntry != null){
             return array('status' => 'error', 'message' => 'Student exists!');
+        }
+        $path = './Photos/'. $student_id .'/';;
+        $filename = $student_img->getClientOriginalName();
+        $extension =$student_img->getClientOriginalExtension();
+        $upload_success = $student_img->move($path, $filename);
+
+        if( $upload_success ) {
+            return Response::json('success', 200);
+        } else {
+            return Response::json('error', 400);
         }
         $student = new Student();
         $student->sid = $student_id;
