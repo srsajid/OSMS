@@ -22,6 +22,7 @@
     <script src="js/App/utility/form.js"></script>
     <script src="js/App/utility/srui-tabs.js"></script>
     <script src="js/App/utility/ui.js"></script>
+    <script src="js/App/utility/jasny-bootstrap.js"></script>
 
     <script src="js/App/utility/TableTab.js"></script>
     <script src="js/App/tabs/product-tab.js"></script>
