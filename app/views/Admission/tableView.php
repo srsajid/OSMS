@@ -41,7 +41,7 @@
                 <td><?php echo $student->id; ?></td>
                 <td><?php echo $student->sid; ?></td>
                 <td><?php echo $student->name; ?></td>
-                <td><?php echo $student->class; ?></td>
+                <td><?php echo $student->clazz; ?></td>
                 <td>
                     <button type="button" class="btn btn-default btn-xs action-menu" data-id="<?php echo $student->id; ?>" action="edit" title="Edit Student">
                         <span class="glyphicon glyphicon-pencil"></span>
