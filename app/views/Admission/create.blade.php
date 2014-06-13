@@ -1,13 +1,28 @@
 
-<form class="form-horizontal" role="form" action="admission/save" method="post" enctype="multipart/form-data">
+<form class="form-horizontal create-edit-form admission-form" role="form" action="admission/save" method="post" enctype="multipart/form-data">
     <script>
         $(function() {
             $( "#datepicker" ).datepicker();
         });
     </script>
-    <input type="file" name="student_image">
-    <input type="file" name="father_image">
-    <input type="file" name="mother_image">
+
+
+
+    <div class="form-group">
+        <div class="col-sm-4">
+            <img src="" class="student_image thumbnail" alt="Student Image">
+            <input type="file" name="student_image" title="Choose Student Image">
+        </div>
+        <div class="col-sm-4">
+            <img src="" class="thumbnail father_image" alt="Father Image">
+            <input type="file" name="father_image" title="Choose Father Image">
+        </div>
+        <div class="col-sm-4">
+            <img src="" class="thumbnail mother_image" alt="Mother Image">
+            <input type="file" name="mother_image" title="Choose Mother Image">
+        </div>
+
+    </div>
     <div class="form-group">
         <label for="inputEmail3" class="col-sm-2 control-label">Student ID</label>
         <div class="col-sm-10">

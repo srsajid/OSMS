@@ -11,6 +11,22 @@ _c.afterTableLoad = function(event, ui) {
     panel.find(".create-admission").on("click", function(){
         util.editPopup("Create Student", "admission/create", {
             width:850,
+            after_load: function() {
+               var popup = this;
+                function readURL(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $('.' + $(input).attr("name")).attr('src', e.target.result);
+                        }
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+               popup.find("[type=file]").srFileInput();
+               popup.find("[type=file]").on("change", function() {
+                   readURL(this);
+               })
+            },
             success: function() {
                 _self.reload();
             }
