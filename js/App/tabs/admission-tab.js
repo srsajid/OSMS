@@ -10,7 +10,7 @@ _c.afterTableLoad = function(event, ui) {
     var panel = ui.panel;
     panel.find(".create-admission").on("click", function(){
         util.editPopup("Create Student", "admission/create", {
-            width:850,
+            width:925,
             after_load: function() {
                var popup = this;
                 function readURL(input) {

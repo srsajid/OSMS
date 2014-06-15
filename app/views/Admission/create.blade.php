@@ -9,17 +9,21 @@
 
 
     <div class="form-group">
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <img src="" class="student_image thumbnail" alt="Student Image">
             <input type="file" name="student_image" title="Choose Student Image">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <img src="" class="thumbnail father_image" alt="Father Image">
             <input type="file" name="father_image" title="Choose Father Image">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <img src="" class="thumbnail mother_image" alt="Mother Image">
             <input type="file" name="mother_image" title="Choose Mother Image">
+        </div>
+        <div class="col-sm-3">
+            <img src="" class="thumbnail guardian_image" alt="Guardian Image">
+            <input type="file" name="guardian_image" title="Choose Guardians Image">
         </div>
 
     </div>
