@@ -49,16 +49,30 @@ Class AdmissionController extends BaseController{
         if($hasEntry != null){
             return array('status' => 'error', 'message' => 'Student exists!');
         }
-        $path = './Photos/'. $student_id .'/';;
-        $filename = $student_img->getClientOriginalName();
-        $extension =$student_img->getClientOriginalExtension();
-        $upload_success = $student_img->move($path, $filename);
+        //$path = './Photos/'. $student_id .'/';
+        //$filename = $student_img->getClientOriginalName();
+        //$temp_name = 'student';
+        //$extension =$student_img->getClientOriginalExtension();
+        //$full_name = $temp_name. '.' .$extension;
+        //$upload_success = $student_img->move($path, $full_name);
 
-        if( $upload_success ) {
-            return Response::json('success', 200);
-        } else {
-            return Response::json('error', 400);
-        }
+        //$filename = $father_img->getClientOriginalName();
+        //$temp_name = 'father';
+        //$extension =$father_img->getClientOriginalExtension();
+        //$full_name = $temp_name. '.' .$extension;
+        //$upload_success = $father_img->move($path, $full_name);
+
+        //$filename = $mother_img->getClientOriginalName();
+        //$temp_name = 'mother';
+        //$extension =$mother_img->getClientOriginalExtension();
+        //$full_name = $temp_name. '.' .$extension;
+        //$upload_success = $mother_img->move($path, $full_name);
+
+        //$filename = $guardian_img->getClientOriginalName();
+        //$temp_name = 'guardian';
+        //$extension =$guardian_img->getClientOriginalExtension();
+        //$full_name = $temp_name. '.' .$extension;
+        //$upload_success = $guardian_img->move($path, $full_name);
         $student = new Student();
         $student->sid = $student_id;
         $student->name = $name;
