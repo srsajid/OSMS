@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/views/product/form.blade.php" line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="385185ff-0883-4314-8f4b-368989dcf1ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/App/tabs/admission-tab.js" afterPath="$PROJECT_DIR$/js/App/tabs/admission-tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Admission/create.blade.php" afterPath="$PROJECT_DIR$/app/views/Admission/create.blade.php" />
+    <list default="true" id="385185ff-0883-4314-8f4b-368989dcf1ae" name="Default" comment="14-06-2014 a&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="0aedbf1b-8cf0-4399-96a1-2ae7c1ef0dcc" name="New changelist" comment="New changelist" />
@@ -43,7 +41,7 @@
       <file leaf-file-name="admission-tab.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/App/tabs/admission-tab.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="21" selection-start="402" selection-end="402" vertical-scroll-proportion="0.2808765" vertical-offset="63" max-vertical-offset="1003">
+            <state line="12" column="21" selection-start="402" selection-end="402" vertical-scroll-proportion="0.3560606" vertical-offset="63" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -778,7 +776,11 @@
       <created>1402515628075</created>
       <updated>1402515628075</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="14-06-2014 a&#10;">
+      <created>1402813127579</created>
+      <updated>1402813127579</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -803,9 +805,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32263243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32263243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -815,12 +818,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15248796" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15248796" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -877,7 +879,8 @@
     <MESSAGE value="10-06-2014 b&#10;" />
     <MESSAGE value="10-06-2014 c&#10;" />
     <MESSAGE value="11-06-2014 c&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="11-06-2014 c&#10;" />
+    <MESSAGE value="14-06-2014 a&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="14-06-2014 a&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1166,7 +1169,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/App/tabs/admission-tab.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="21" selection-start="402" selection-end="402" vertical-scroll-proportion="0.2808765" vertical-offset="63" max-vertical-offset="1003">
+        <state line="12" column="21" selection-start="402" selection-end="402" vertical-scroll-proportion="0.3560606" vertical-offset="63" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
