@@ -19,8 +19,9 @@ Class AdmissionController extends BaseController{
         return View::make("admission.create");
     }
 
-    public function edit($id)
+    public function edit()
     {
+        $id = Input::get("id");
         $student = null;
         if($id){
             $student = Student::find($id);
@@ -39,6 +40,7 @@ Class AdmissionController extends BaseController{
         $father_img = Input::file("father_img");
         $mother_img = Input::file("mother_img");
         $guardian_img = Input::file("guardians_img");
+        $id  = Input::get("id");
         $student_id = Input::get("student_ID");
         $name = Input::get("student_name");
         $father_name = Input::get("father_name");
@@ -87,7 +89,14 @@ Class AdmissionController extends BaseController{
         //$extension =$guardian_img->getClientOriginalExtension();
         //$full_name = $temp_name. '.' .$extension;
         //$upload_success = $guardian_img->move($path, $full_name);
-        $student = new Student();
+        $student = null;
+        if($id){
+            $student = Student::find($id);
+        }
+        else{
+            $student = new Student();
+        }
+
         $student->sid = $student_id;
         $student->name = $name;
         $student->father_name = $father_name;

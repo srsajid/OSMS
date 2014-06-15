@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="385185ff-0883-4314-8f4b-368989dcf1ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/Admission/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_06_07_123449_create_student_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_06_07_123449_create_student_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AdmissionController.php" afterPath="$PROJECT_DIR$/app/controllers/AdmissionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/App/tabs/admission-tab.js" afterPath="$PROJECT_DIR$/js/App/tabs/admission-tab.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Admission/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/Admission/edit.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="0aedbf1b-8cf0-4399-96a1-2ae7c1ef0dcc" name="New changelist" comment="New changelist" />
@@ -36,73 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="5.0384617" vertical-offset="488" max-vertical-offset="1275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admission-tab.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/App/tabs/admission-tab.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="25" selection-start="1519" selection-end="1527" vertical-scroll-proportion="0.43843845" vertical-offset="687" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category-tab.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/App/tabs/category-tab.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="5" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="731">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/CategoryController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="11" selection-start="1480" selection-end="1572" vertical-scroll-proportion="-9.807693" vertical-offset="969" max-vertical-offset="1785">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/category/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="7" selection-start="530" selection-end="530" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tableView.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/Admission/tableView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="117" selection-start="1652" selection-end="1654" vertical-scroll-proportion="-1.9230769" vertical-offset="715" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/category/update.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="145" selection-start="325" selection-end="362" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdmissionController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AdmissionController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/AdmissionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="-10.653846" vertical-offset="301" max-vertical-offset="2210">
+            <state line="51" column="0" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.33231708" vertical-offset="758" max-vertical-offset="2363">
               <folding />
             </state>
           </provider>
@@ -122,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_05_14_170332_category_table.php" />
         <option value="$PROJECT_DIR$/js/App/utility/util.js" />
         <option value="$PROJECT_DIR$/Form.html" />
         <option value="$PROJECT_DIR$/app/views/emails/auth/test.blade.php" />
@@ -141,7 +74,6 @@
         <option value="$PROJECT_DIR$/app/views/sells/tableView.php" />
         <option value="$PROJECT_DIR$/app/views/product/form.blade.php" />
         <option value="$PROJECT_DIR$/app/views/product/view.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ProductController.php" />
         <option value="$PROJECT_DIR$/app/views/category/edit.php" />
         <option value="$PROJECT_DIR$/js/App/tabs/product-tab.js" />
         <option value="$PROJECT_DIR$/app/views/product/tableView.php" />
@@ -171,8 +103,10 @@
         <option value="$PROJECT_DIR$/app/database/migrations/2014_06_07_123449_create_student_table.php" />
         <option value="$PROJECT_DIR$/app/views/Admission/create.blade.php" />
         <option value="$PROJECT_DIR$/app/views/Admission/edit.php" />
-        <option value="$PROJECT_DIR$/app/controllers/AdmissionController.php" />
         <option value="$PROJECT_DIR$/js/App/tabs/admission-tab.js" />
+        <option value="$PROJECT_DIR$/app/controllers/ProductController.php" />
+        <option value="$PROJECT_DIR$/app/views/Admission/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/AdmissionController.php" />
       </list>
     </option>
   </component>
@@ -600,7 +534,11 @@
       <created>1402824466609</created>
       <updated>1402824466609</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="14-06-2014 c&#10;">
+      <created>1402841787424</created>
+      <updated>1402841787424</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -627,6 +565,7 @@
     <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32263243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -642,7 +581,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -701,7 +639,8 @@
     <MESSAGE value="11-06-2014 c&#10;" />
     <MESSAGE value="14-06-2014 a&#10;" />
     <MESSAGE value="14-06-2014 b&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="14-06-2014 b&#10;" />
+    <MESSAGE value="14-06-2014 c&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="14-06-2014 c&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -716,38 +655,8 @@
           <line>3</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>40</line>
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>38</line>
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>39</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>49</line>
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>23</line>
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="99" />
+      <option name="time" value="100" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -868,11 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="31" selection-start="3033" selection-end="3033" vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="2210" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/App/tabs/product-tab.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122" />
@@ -963,46 +867,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Admission/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="149" selection-start="7275" selection-end="7275" vertical-scroll-proportion="-97.42308" vertical-offset="0" max-vertical-offset="2890">
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="83" selection-start="86" selection-end="146" vertical-scroll-proportion="0.25914633" vertical-offset="0" max-vertical-offset="328">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="11" selection-start="1480" selection-end="1572" vertical-scroll-proportion="-9.807693" vertical-offset="969" max-vertical-offset="1785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/category/update.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="145" selection-start="325" selection-end="362" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/category/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="530" selection-end="530" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="5.0384617" vertical-offset="488" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
@@ -1030,23 +897,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AdmissionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="-10.653846" vertical-offset="301" max-vertical-offset="2210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/App/tabs/category-tab.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+        <state line="26" column="5" selection-start="723" selection-end="723" vertical-scroll-proportion="0.6723164" vertical-offset="204" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/App/tabs/admission-tab.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="25" selection-start="1519" selection-end="1527" vertical-scroll-proportion="0.43843845" vertical-offset="687" max-vertical-offset="1020">
+        <state line="52" column="22" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.6158192" vertical-offset="666" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="-0.39939025" vertical-offset="488" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/category/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="530" selection-end="530" vertical-scroll-proportion="0.6219512" vertical-offset="0" max-vertical-offset="328">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/category/update.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="145" selection-start="325" selection-end="362" vertical-scroll-proportion="0.21587302" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="31" selection-start="3033" selection-end="3033" vertical-scroll-proportion="3.9390244" vertical-offset="204" max-vertical-offset="2125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="36" selection-start="1560" selection-end="1560" vertical-scroll-proportion="3.831746" vertical-offset="0" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Admission/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="41" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.43174604" vertical-offset="357" max-vertical-offset="2907">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AdmissionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.33231708" vertical-offset="758" max-vertical-offset="2363">
           <folding />
         </state>
       </provider>
