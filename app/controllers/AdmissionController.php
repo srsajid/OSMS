@@ -19,6 +19,20 @@ Class AdmissionController extends BaseController{
         return View::make("admission.create");
     }
 
+    public function edit($id)
+    {
+        $student = null;
+        if($id){
+            $student = Student::find($id);
+        }
+        else{
+            $student = new Student();
+        }
+        return View::make("admission.edit", array(
+            'student' => $student,
+        ));
+    }
+
     public function save()
     {
         $student_img = Input::file("student_image");
@@ -95,9 +109,6 @@ Class AdmissionController extends BaseController{
         $student->transport_cost = $transportfee;
         $student->clazz = $clazz;
         $student->shift = $shift;
-        if($shift == 'Yes'){
-            $student->shift = $shift;
-        }
         $student->section = $section;
         if($rsidn){
             $student->has_rid = true;
@@ -105,6 +116,8 @@ Class AdmissionController extends BaseController{
         else{
             $student->has_rid = false;
         }
+        $student->rid_class = Input::get("rsidclass");
+        $student->rid_section = Input::get("rsidsection");
         $student->rid = $rsidn;
         $student->save();
         return array('status' => 'success', 'message' => 'Student has been saved successfully.');

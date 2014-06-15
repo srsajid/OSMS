@@ -29,6 +29,8 @@ class CreateStudentTable extends Migration {
             $table->string("shift",100);
             $table->boolean("has_rid");
             $table->string("rid",100);
+            $table->string("rid_class",10);
+            $table->string("rid_section",100);
         });
     }
 

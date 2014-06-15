@@ -1,11 +1,11 @@
 /**
  * Created by User on 4/25/14.
  */
-var _c = App.tabs.admission = new TableTab("admission", "admission", "admission");
+var _a = App.tabs.admission = new TableTab("admission", "admission", "admission");
 
-_c.beforeTableLoad = function(event, ui) {
+_a.beforeTableLoad = function(event, ui) {
 }
-_c.afterTableLoad = function(event, ui) {
+_a.afterTableLoad = function(event, ui) {
     var _self = this;
     var panel = ui.panel;
     panel.find(".create-admission").on("click", function(){
@@ -34,18 +34,19 @@ _c.afterTableLoad = function(event, ui) {
     });
 }
 
-_c.onMenuOptionClick = function(action, data) {
+_a.onMenuOptionClick = function(action, data) {
     var _self = this;
     switch (action) {
         case "edit":
-            _self.editCategory(data.id);
+            _self.editStudent(data.id);
             break;
     }
 }
 
-_c.editCategory = function (id){
+_a.editStudent = function (id){
     var _self = this;
     util.editPopup("Edit Student", "admission/edit", {
+        width:925,
         success: function() {
             _self.reload();
         },

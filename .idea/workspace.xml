@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="385185ff-0883-4314-8f4b-368989dcf1ae" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\OSMS\Photos\A11AA111\Desert.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\OSMS\Photos\ADAD\Desert.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/Admission/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_06_07_123449_create_student_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_06_07_123449_create_student_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AdmissionController.php" afterPath="$PROJECT_DIR$/app/controllers/AdmissionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/App/tabs/admission-tab.js" afterPath="$PROJECT_DIR$/js/App/tabs/admission-tab.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/include_paths.php" afterPath="$PROJECT_DIR$/vendor/composer/include_paths.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="0aedbf1b-8cf0-4399-96a1-2ae7c1ef0dcc" name="New changelist" comment="New changelist" />
@@ -40,37 +36,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="create.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/Admission/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="28" selection-start="918" selection-end="918" vertical-scroll-proportion="-5.230769" vertical-offset="255" max-vertical-offset="2890">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admission-tab.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/App/tabs/admission-tab.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="17" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdmissionController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/AdmissionController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="0" selection-start="4360" selection-end="4360" vertical-scroll-proportion="0.5335366" vertical-offset="1661" max-vertical-offset="1989">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="-5.8846154" vertical-offset="204" max-vertical-offset="1258">
+            <state line="30" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="5.0384617" vertical-offset="488" max-vertical-offset="1275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admission-tab.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/App/tabs/admission-tab.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="25" selection-start="1519" selection-end="1527" vertical-scroll-proportion="0.43843845" vertical-offset="687" max-vertical-offset="1020">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category-tab.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/App/tabs/category-tab.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="5" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="731">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/CategoryController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="11" selection-start="1480" selection-end="1572" vertical-scroll-proportion="-9.807693" vertical-offset="969" max-vertical-offset="1785">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/category/edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="7" selection-start="530" selection-end="530" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
@@ -79,7 +84,25 @@
       <file leaf-file-name="tableView.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Admission/tableView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="187" selection-end="187" vertical-scroll-proportion="20.115385" vertical-offset="608" max-vertical-offset="1020">
+            <state line="45" column="117" selection-start="1652" selection-end="1654" vertical-scroll-proportion="-1.9230769" vertical-offset="715" max-vertical-offset="1020">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/category/update.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="145" selection-start="325" selection-end="362" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdmissionController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/AdmissionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="-10.653846" vertical-offset="301" max-vertical-offset="2210">
               <folding />
             </state>
           </provider>
@@ -99,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_05_14_170332_category_table.php" />
         <option value="$PROJECT_DIR$/js/App/utility/util.js" />
         <option value="$PROJECT_DIR$/Form.html" />
@@ -136,20 +158,21 @@
         <option value="$PROJECT_DIR$/app/views/admin/login.php" />
         <option value="$PROJECT_DIR$/app/services/AdmissionService.php" />
         <option value="$PROJECT_DIR$/app/views/admission/createStudent.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/../../phpMyAdmin/version_check.php" />
         <option value="$PROJECT_DIR$/../../phpMyAdmin/navigation.php" />
         <option value="$PROJECT_DIR$/../../phpMyAdmin/sql.php" />
         <option value="$PROJECT_DIR$/app/models/Student.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_06_07_123449_create_student_table.php" />
         <option value="$PROJECT_DIR$/app/views/admission/tableView.php" />
         <option value="$PROJECT_DIR$/js/App/utility/Jsny.js" />
         <option value="$PROJECT_DIR$/app/views/admission/admissionForm.php" />
         <option value="$PROJECT_DIR$/app/views/admin/cms.php" />
         <option value="$PROJECT_DIR$/app/views/admission/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2014_06_07_123449_create_student_table.php" />
         <option value="$PROJECT_DIR$/app/views/Admission/create.blade.php" />
-        <option value="$PROJECT_DIR$/js/App/tabs/admission-tab.js" />
+        <option value="$PROJECT_DIR$/app/views/Admission/edit.php" />
         <option value="$PROJECT_DIR$/app/controllers/AdmissionController.php" />
+        <option value="$PROJECT_DIR$/js/App/tabs/admission-tab.js" />
       </list>
     </option>
   </component>
@@ -196,6 +219,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -296,13 +320,136 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OSMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OSMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OSMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admission" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OSMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OSMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OSMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,205 +470,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel\app\views\form" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/config/app.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/controllers/SellsController.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/services/SellsService.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/Admission/create.blade.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/admin/cms.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/sells/tableView.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/composer.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/css/app/base-style.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/js/App/tabs/admission-tab.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/js/App/utility/prototype.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/autoload.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/composer/autoload_classmap.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/composer/autoload_namespaces.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/composer/autoload_real.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/composer/installed.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/CHANGES</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/VERSION</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/DKIMSigner.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/DomainKeySigner.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SendmailTransport.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/js/bootstrap.file-input.js</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/README.git</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/build.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/create_pear_package.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/package.xml.tpl</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/.gitignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/.travis.yml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/LICENSE</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/behat.yml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/composer.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/phpunit.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/provides.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/readme.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/spec/Way/Generators/Compilers/TemplateCompilerSpec.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/spec/Way/Generators/GeneratorSpec.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/spec/Way/Generators/Parsers/MigrationFieldsParserSpec.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/spec/Way/Generators/Parsers/MigrationNameParserSpec.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/spec/Way/Generators/SchemaCreatorSpec.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Commands/ControllerGeneratorCommand.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Commands/GeneratorCommand.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Commands/MigrationGeneratorCommand.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Commands/ModelGeneratorCommand.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Commands/PivotGeneratorCommand.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Commands/PublishTemplatesCommand.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Commands/ResourceGeneratorCommand.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Commands/ScaffoldGeneratorCommand.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Commands/SeederGeneratorCommand.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Commands/ViewGeneratorCommand.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Compilers/Compiler.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Compilers/TemplateCompiler.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Filesystem/FileAlreadyExists.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Filesystem/FileNotFound.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Filesystem/Filesystem.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Generator.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/GeneratorsServiceProvider.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/InvalidMigrationName.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Parsers/MigrationFieldsParser.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Parsers/MigrationNameParser.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/SchemaCreator.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Syntax/AddToTable.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Syntax/CreateTable.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Syntax/DroppedTable.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Syntax/RemoveFromTable.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/Syntax/Table.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/templates/controller.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/templates/migration.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/templates/model.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/templates/scaffolding/controller.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/templates/scaffolding/model.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/templates/schema.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/templates/seed.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/Way/Generators/templates/view.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/src/config/config.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/.gitkeep</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/features/bootstrap/FeatureContext.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/features/generators.feature</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/features/migrations.feature</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/stubs/AddTitleToOrdersTable.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/stubs/CreateComplexOrdersTable.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/stubs/CreateOrdersTable.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/stubs/DropOrdersTable.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/stubs/Order.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/stubs/OrdersController.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/stubs/RecentOrdersTableSeeder.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/stubs/RemoveTitleFromOrdersTable.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/vendor/way/generators/tests/stubs/index.blade.txt</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -648,7 +596,11 @@
       <created>1402813191986</created>
       <updated>1402813191986</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="14-06-2014 b&#10;">
+      <created>1402824466609</created>
+      <updated>1402824466609</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -673,47 +625,47 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32263243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29135054" sideWeight="0.67113274" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39004815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29590288" sideWeight="0.67113274" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39004815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15248796" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3258427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32263243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39479905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39004815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15248796" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28907436" sideWeight="0.67113274" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29590288" sideWeight="0.67113274" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -748,7 +700,8 @@
     <MESSAGE value="10-06-2014 c&#10;" />
     <MESSAGE value="11-06-2014 c&#10;" />
     <MESSAGE value="14-06-2014 a&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="14-06-2014 a&#10;" />
+    <MESSAGE value="14-06-2014 b&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="14-06-2014 b&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -765,84 +718,39 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>107</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>108</line>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>23</line>
+          <line>37</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>26</line>
+          <line>40</line>
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>24</line>
+          <line>38</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>25</line>
+          <line>39</line>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>35</line>
+          <line>49</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>44</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>52</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>56</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/AdmissionController.php</url>
-          <line>59</line>
-          <option name="timeStamp" value="93" />
+          <line>23</line>
+          <option name="timeStamp" value="96" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="94" />
+      <option name="time" value="99" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="29" selection-start="916" selection-end="916" vertical-scroll-proportion="0.4045534" vertical-offset="653" max-vertical-offset="1224" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Package.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/PackageItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/hello.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="597" />
@@ -878,19 +786,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0107527" vertical-offset="564" max-vertical-offset="1122" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/category/tableView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="736" selection-end="736" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="969" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/App/tabs/Sells-tab.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="12" selection-start="322" selection-end="322" vertical-scroll-proportion="0.37018424" vertical-offset="0" max-vertical-offset="1139" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/category/update.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="96" selection-start="29" selection-end="96" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="306" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/common.rnc">
@@ -903,16 +801,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/category/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.7307692" vertical-offset="90" max-vertical-offset="11441" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/tbl_structure.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.8846154" vertical-offset="103" max-vertical-offset="2890" />
@@ -921,11 +809,6 @@
     <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/js/get_scripts.js.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="176" selection-end="176" vertical-scroll-proportion="0.33114755" vertical-offset="52" max-vertical-offset="867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/sql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="0.6005435" vertical-offset="0" max-vertical-offset="3485" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/navigation.php">
@@ -973,19 +856,9 @@
         <state line="9" column="31" selection-start="124" selection-end="151" vertical-scroll-proportion="0.18478261" vertical-offset="0" max-vertical-offset="368" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1785" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="394" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="170" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/product/form.blade.php">
@@ -1048,51 +921,132 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="597" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/category/tableView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="736" selection-end="736" vertical-scroll-proportion="-0.21505377" vertical-offset="409" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/product/selection.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="597">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/product/productSelection.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="597">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_07_123449_create_student_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="34" selection-start="348" selection-end="348" vertical-scroll-proportion="3.9230769" vertical-offset="289" max-vertical-offset="765">
+        <state line="32" column="43" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.6454545" vertical-offset="172" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/App/tabs/admission-tab.js">
+    <entry file="file://$PROJECT_DIR$/app/models/Student.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="83" selection-start="86" selection-end="146" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="-5.8846154" vertical-offset="204" max-vertical-offset="1258">
+        <state line="3" column="31" selection-start="105" selection-end="105" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Admission/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="918" selection-end="918" vertical-scroll-proportion="-5.230769" vertical-offset="255" max-vertical-offset="2890">
+        <state line="149" column="69" selection-start="6441" selection-end="6452" vertical-scroll-proportion="-8.5" vertical-offset="2312" max-vertical-offset="2890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Admission/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="149" selection-start="7275" selection-end="7275" vertical-scroll-proportion="-97.42308" vertical-offset="0" max-vertical-offset="2890">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="83" selection-start="86" selection-end="146" vertical-scroll-proportion="0.25914633" vertical-offset="0" max-vertical-offset="328">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="11" selection-start="1480" selection-end="1572" vertical-scroll-proportion="-9.807693" vertical-offset="969" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/category/update.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="145" selection-start="325" selection-end="362" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/category/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="530" selection-end="530" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="5.0384617" vertical-offset="488" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/sql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="0.33224756" vertical-offset="119" max-vertical-offset="3485">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Admission/tableView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="187" selection-end="187" vertical-scroll-proportion="20.115385" vertical-offset="608" max-vertical-offset="1020">
+        <state line="45" column="117" selection-start="1652" selection-end="1654" vertical-scroll-proportion="-1.9230769" vertical-offset="715" max-vertical-offset="1020">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.3605442" vertical-offset="81" max-vertical-offset="11441">
+          <folding>
+            <marker date="1395922283000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/AdmissionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="0" selection-start="4360" selection-end="4360" vertical-scroll-proportion="0.5335366" vertical-offset="1661" max-vertical-offset="1989">
+        <state line="34" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="-10.653846" vertical-offset="301" max-vertical-offset="2210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/App/tabs/category-tab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="5" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/App/tabs/admission-tab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="25" selection-start="1519" selection-end="1527" vertical-scroll-proportion="0.43843845" vertical-offset="687" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
