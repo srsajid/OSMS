@@ -21,9 +21,7 @@ Route::get("login", array('as' => 'login', function(){
 
 Route::post("login", "AccountController@login");
 Route::get("logout", "AccountController@logout");
-Route::get("/admin", array('as' => 'admin',function(){
-    return View::make("admin.cms");
-}))->before("auth");
+Route::get("/admin", array('as' => 'admin', 'uses' => "AccountController@admin"))->before("auth");
 
 Route::get("/admission", "AdmissionController@loadTable");
 Route::get("/admission/create", "AdmissionController@create");

@@ -18,6 +18,11 @@ Class AccountController extends BaseController{
        Auth::logout();
        return Redirect::to("login");
     }
+
+    public function admin() {
+        return View::make("admin.cms");
+    }
+
     public function postSignIn(){
         $validator = Validator::make(Input::all(),
             array(
