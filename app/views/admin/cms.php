@@ -51,25 +51,11 @@
             </div>
             <div class="row ribbon">
                 <div class="ribbon-menu-btn-container">
-                    <button type="button" class="btn btn-default btn-lg ribbon-menu-btn" tab-id="product">
-                        <span class="glyphicon glyphicon-briefcase"></span> Product
-                    </button>
-
-                    <button type="button" class="btn btn-default btn-lg ribbon-menu-btn" tab-id="category">
-                        <span class="glyphicon glyphicon-adjust"></span> Category
-                    </button>
-                    <button type="button" class="btn btn-default btn-lg ribbon-menu-btn" tab-id="package">
-                        <span class="icon-large icon-gift"></span> Package Product
-                    </button>
-
-                    <button type="button" class="btn btn-default btn-lg ribbon-menu-btn" tab-id="sells">
-                        <span class="glyphicon-barcode"></span> Sells
-                    </button>
-
-                    <button type="button" class="btn btn-default btn-lg ribbon-menu-btn" tab-id="admission">
-                        <span class="glyphicon glyphicon-user"></span> Admission
-                    </button>
-
+                    <?php $menus->each(function($menu){
+                        echo("<button type='button' class='btn btn-default btn-lg ribbon-menu-btn' tab-id='$menu->tab_id' nav-menu='$menu->nav_menu'>");
+                        echo("<span class='$menu->ui_class'></span> $menu->title");
+                        echo("</button>");
+                    });?>
                 </div>
             </div>
             <div class="row body" style="margin-top: 20px">

@@ -20,7 +20,8 @@ Class AccountController extends BaseController{
     }
 
     public function admin() {
-        return View::make("admin.cms");
+        $menus = Menu::all();
+        return View::make("admin.cms", array('menus' => $menus));
     }
 
     public function postSignIn(){

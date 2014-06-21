@@ -7,6 +7,9 @@
     line-height: 2.5;
     margin-right: 5px;
 }
+.ribbon-menu-btn-container button {
+    display: none;
+}
 /* Tab */
 #tabs {
     min-height: 600px;
