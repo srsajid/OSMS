@@ -35,16 +35,16 @@
 <body>
     <div id="admin-panel-container">
         <div class="container-fluid">
-            <div class="row navigation">
+            <div class="row navigation osms-navigation">
                 <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="">Changes</a>
                     </div>
                     <div>
                         <ul class="nav navbar-nav">
-                            <li class="active"><a>Item 1</a></li>
-                            <li><a>Item 2</a></li>
-                            <li><a>Item 3</a></li>
+                            <?php foreach(OSMS::$NAV_MENU as $key => $value){
+                                echo("<li type='$key'><a>$value</a></li>");
+                            }?>
                         </ul>
                     </div>
                 </nav>
