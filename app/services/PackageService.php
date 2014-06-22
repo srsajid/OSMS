@@ -40,12 +40,20 @@ class PackageService {
         return Package::count();
     }
 
-    public static function save($name, $items, $quantities) {
-        DB::transaction(function() use ($name, $items, $quantities) {
+    public static function save($id, $name, $items, $quantities) {
+        DB::transaction(function() use ($id, $name, $items, $quantities) {
             $size = count($items);
-            $package = new Package();
+            $package = null;
+            if($id) {
+                $package = Package::find(intval($id));
+            } else {
+                $package = new Package();
+            }
             $package->name = $name;
             $package->save();
+            $package->items->each(function($item){
+                $item->delete();
+            });
             for($i=0; $i < $size; $i++) {
                 $item = (int) $items[$i];
                 $product = Product::find($item);

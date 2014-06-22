@@ -24,17 +24,23 @@ class PackageController extends BaseController{
     }
 
     public function create() {
-       return View::make("package.create");
+        $pack = null;
+        if(Input::get("id")) {
+            $pack = Package::find(intval(Input::get("id")));
+        } else {
+            $pack = new Package();
+        }
+       return View::make("package.create", array('pack' => $pack));
     }
 
     public function save() {
-        $x = 100;
+        $id = Input::get("id");
         $name = Input::get("name");
         $items = json_decode(Input::get("items"));
         $quantities = json_decode(Input::get("quantities"));
         $result = null;
         try{
-            $result = PackageService::save($name, $items, $quantities);
+            $result = PackageService::save($id, $name, $items, $quantities);
         } catch(Exception $e) {
             $result = false;
         }

@@ -18,13 +18,16 @@ _pp.onMenuOptionClick = function(action, data) {
     var _self = this;
     switch (action) {
         case "edit":
+            _pp.create(data.id);
         case "inventory-update":
     }
 }
 
-_pp.create = function() {
+_pp.create = function(id) {
+    var _self = this;
     util.editPopup("Create Package Product", App.baseUrl + "package/create", {
         width: 800,
+        data: {id: id},
         after_load: function () {
             var x = 0;
             var selector = util.twoSideSelection(this, App.baseUrl + "product/selection", "items");
@@ -39,6 +42,7 @@ _pp.create = function() {
             }
         },
         preSubmit: function(ajaxSetting) {
+            var popup = this;
             var items = [];
             var quantities = [];
             var form = this.find("form");
@@ -56,6 +60,7 @@ _pp.create = function() {
                 type: "POST",
                 dataType: "json",
                 data: {
+                    id: form.find("input[name=id]").val(),
                     name: form.find("input[name=name]").val(),
                     items: JSON.stringify(items),
                     quantities: JSON.stringify(quantities)
@@ -64,7 +69,9 @@ _pp.create = function() {
                     form.loader(false)
                 },
                 success: function(resp) {
-                   util.notify(resp.message, resp.status)
+                   util.notify(resp.message, resp.status);
+                   popup.dialog("close");
+                   _self.reload();
                 },
                 error: function(a, b, resp) {
                     util.notify(resp.message, "error")

@@ -128,7 +128,8 @@ var util = {
         container.loader();
         init();
         loadLeftTable();
-        container.loader(false)
+        container.loader(false);
+        bindRightTableEvents();
         return globalFunc;
     },
     ajax: function(settings) {
