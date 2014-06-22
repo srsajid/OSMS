@@ -35,7 +35,7 @@
         <?php $sells->each(function($sell){ ?>
             <tr>
                 <td><?php echo $sell->id;?></td>
-                <td></td>
+                <td><?php echo $sell->getTotal();?></td>
                 <td><?php echo $sell->created_at; ?></td>
                 <td><?php echo $sell->user->username; ?></td>
                 <td></td>

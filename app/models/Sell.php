@@ -15,4 +15,12 @@ class Sell extends Eloquent {
     public function user() {
         return $this->belongsTo("User");
     }
+
+    public function getTotal() {
+        $total = 0.0;
+        foreach($this->items as $item){
+            $total = $total + ($item->productPrice * $item->quantity);
+        }
+        return $total;
+    }
 } 

@@ -72,5 +72,5 @@ Route::post('/sign-in',array(
 );
 
 Route::get("test", function(){
-   return Package::find(1)->items;
+   return Sell::find(1)->getTotal();
 });
