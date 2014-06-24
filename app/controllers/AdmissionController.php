@@ -29,6 +29,10 @@ Class AdmissionController extends BaseController{
         else{
             $student = new Student();
         }
+        $absoulate_path = public_path();
+        $path = $absoulate_path .'/Photos/'. $student->id .'/';
+        //$student_image = storage_path($path.student.)
+        $files = scandir($path);
         return View::make("admission.edit", array(
             'student' => $student,
         ));
@@ -37,9 +41,9 @@ Class AdmissionController extends BaseController{
     public function save()
     {
         $student_img = Input::file("student_image");
-        $father_img = Input::file("father_img");
-        $mother_img = Input::file("mother_img");
-        $guardian_img = Input::file("guardians_img");
+        $father_img = Input::file("father_image");
+        $mother_img = Input::file("mother_image");
+        $guardian_img = Input::file("guardian_image");
         $id  = Input::get("id");
         $student_id = Input::get("student_ID");
         $name = Input::get("student_name");
@@ -65,30 +69,32 @@ Class AdmissionController extends BaseController{
         if($hasEntry != null){
             return array('status' => 'error', 'message' => 'Student exists!');
         }
-        //$path = './Photos/'. $student_id .'/';
-        //$filename = $student_img->getClientOriginalName();
-        //$temp_name = 'student';
-        //$extension =$student_img->getClientOriginalExtension();
-        //$full_name = $temp_name. '.' .$extension;
-        //$upload_success = $student_img->move($path, $full_name);
+        $absoulate_path = public_path();
+        //Here
+        $path = $absoulate_path .'/Photos/'. $student_id .'/';
+        $filename = $student_img->getClientOriginalName();
+        $temp_name = 'student';
+        $extension =$student_img->getClientOriginalExtension();
+        $full_name = $temp_name. '.' .$extension;
+        $upload_success = $student_img->move($path, $full_name);
 
-        //$filename = $father_img->getClientOriginalName();
-        //$temp_name = 'father';
-        //$extension =$father_img->getClientOriginalExtension();
-        //$full_name = $temp_name. '.' .$extension;
-        //$upload_success = $father_img->move($path, $full_name);
+        $filename = $father_img->getClientOriginalName();
+        $temp_name = 'father';
+        $extension =$father_img->getClientOriginalExtension();
+        $full_name = $temp_name. '.' .$extension;
+        $upload_success = $father_img->move($path, $full_name);
 
-        //$filename = $mother_img->getClientOriginalName();
-        //$temp_name = 'mother';
-        //$extension =$mother_img->getClientOriginalExtension();
-        //$full_name = $temp_name. '.' .$extension;
-        //$upload_success = $mother_img->move($path, $full_name);
+        $filename = $mother_img->getClientOriginalName();
+        $temp_name = 'mother';
+        $extension =$mother_img->getClientOriginalExtension();
+        $full_name = $temp_name. '.' .$extension;
+        $upload_success = $mother_img->move($path, $full_name);
 
-        //$filename = $guardian_img->getClientOriginalName();
-        //$temp_name = 'guardian';
-        //$extension =$guardian_img->getClientOriginalExtension();
-        //$full_name = $temp_name. '.' .$extension;
-        //$upload_success = $guardian_img->move($path, $full_name);
+        $filename = $guardian_img->getClientOriginalName();
+        $temp_name = 'guardian';
+        $extension =$guardian_img->getClientOriginalExtension();
+        $full_name = $temp_name. '.' .$extension;
+        $upload_success = $guardian_img->move($path, $full_name);
         $student = null;
         if($id){
             $student = Student::find($id);

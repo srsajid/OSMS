@@ -1,5 +1,5 @@
 
-<form class="form-horizontal create-edit-form admission-form" role="form" action="admission/save" method="post" enctype="multipart/form-data">
+<form class="form-horizontal create-edit-form admission-form" role="form" action="<?php echo OSMS::$baseUrl;?>admission/save" method="post" enctype="multipart/form-data">
     <script>
         $(function() {
             $( "#datepicker" ).datepicker();
@@ -23,7 +23,7 @@
         </div>
         <div class="col-sm-3">
             <img src="" class="thumbnail guardian_image" alt="Guardian Image">
-            <input type="file" name="guardian_image" title="Choose Guardians Image">
+            <input type="file" name="guardian_image"  title="Choose Guardians Image">
         </div>
 
     </div>
