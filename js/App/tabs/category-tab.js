@@ -16,6 +16,13 @@ _c.afterTableLoad = function(event, ui) {
             }
         });
     });
+    panel.find(".upload-image").on("click", function(){
+        util.editPopup("Upload Image", "upload/create", {
+            success: function() {
+                _self.reload();
+            }
+        });
+    });
 }
 
 _c.onMenuOptionClick = function(action, data) {

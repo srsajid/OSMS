@@ -74,3 +74,26 @@ Route::post('/sign-in',array(
 Route::get("test", function(){
    return Sell::find(1)->getTotal();
 });
+
+
+Route::get("upload/create", function(){
+    return View::make("test");
+});
+
+Route::post("upload/save", function(){
+    $student = Input::file('student');
+    $father = Input::file('father');
+
+    $destinationPath = public_path().'/uploads';
+    $filename = $student->getClientOriginalName();
+    $filename2 = $father->getClientOriginalName();
+    $extension =$student->getClientOriginalExtension();
+    $student_success = Input::file('student')->move($destinationPath, $filename);
+    $father_success = Input::file('father')->move($destinationPath, $filename2);
+
+    if( $student_success) {
+        return array("status" => "success", "message" => "Upload successfully");
+    } else {
+        return Response::json('error', 400);
+    }
+});

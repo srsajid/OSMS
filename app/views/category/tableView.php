@@ -12,6 +12,9 @@
                 <button type="button" class="btn btn-default btn-sm create-category" title="Create Category">
                     <span class="glyphicon glyphicon-plus-sign"></span>
                 </button>
+                <button type="button" class="btn btn-default btn-sm upload-image" title="Create Category">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                </button>
             </div>
         </div>
     </nav>
